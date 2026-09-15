@@ -3,92 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>راهنمای مؤسسین</title>
 
 <style>
-*{box-sizing:border-box}
-body{
-margin:0;
-font-family:Tahoma,Arial,sans-serif;
-background:#f3f6fa;
-color:#1f2937
+* {
+    box-sizing: border-box;
 }
-.app{
-max-width:520px;
-margin:auto;
-min-height:100vh;
-background:#fff
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
 }
-.header{
-background:linear-gradient(135deg,#1769aa,#2196f3);
-color:#fff;
-padding:28px 20px 32px;
-text-align:center;
-border-radius:0 0 28px 28px
+
+.app {
+    max-width: 500px;
+    margin: auto;
+    min-height: 100vh;
+    background: white;
 }
-.header .icon{font-size:42px;margin-bottom:8px}
-.header h1{margin:0;font-size:24px}
-.header p{margin:10px 0 0;font-size:14px;line-height:1.8}
-.content{padding:22px 16px 30px}
-.section-title{
-font-size:17px;
-font-weight:bold;
-margin:5px 4px 15px
+
+.header {
+    background: #1565c0;
+    color: white;
+    padding: 28px 20px 24px;
+    text-align: center;
 }
-.menu{display:flex;flex-direction:column;gap:12px}
-.menu a{
-text-decoration:none;
-color:inherit
+
+.header h1 {
+    margin: 0 0 8px;
+    font-size: 24px;
 }
-.menu-item{
-display:flex;
-align-items:center;
-background:#fff;
-border:1px solid #e5e7eb;
-border-radius:18px;
-padding:17px 16px;
-min-height:70px;
-box-shadow:0 3px 12px rgba(0,0,0,.05);
-transition:.2s
+
+.header p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
 }
-.menu-item:hover{
-transform:translateY(-2px);
-box-shadow:0 6px 16px rgba(0,0,0,.08)
+
+.menu {
+    padding: 18px 14px;
 }
-.menu-icon{
-width:48px;
-height:48px;
-border-radius:14px;
-background:#eef6ff;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:25px;
-margin-left:14px;
-flex-shrink:0
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: #222;
+    background: #fff;
+    border: 1px solid #e1e5e9;
+    border-radius: 16px;
+    padding: 17px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    transition: 0.15s;
 }
-.menu-text{flex:1}
-.menu-text h3{
-margin:0 0 5px;
-font-size:16px;
-color:#111827
+
+.menu-item:active {
+    transform: scale(0.98);
 }
-.menu-text p{
-margin:0;
-font-size:12px;
-color:#6b7280;
-line-height:1.6
+
+.menu-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 14px;
+    background: #eaf3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
 }
-.arrow{
-font-size:22px;
-color:#9ca3af;
-margin-right:8px
+
+.menu-text {
+    flex: 1;
 }
-.footer{
-text-align:center;
-padding:10px 20px 25px;
-color:#9ca3af;
-font-size:11px
+
+.menu-text strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.menu-text small {
+    display: block;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.arrow {
+    font-size: 22px;
+    color: #999;
+}
+
+.footer {
+    text-align: center;
+    color: #999;
+    font-size: 11px;
+    padding: 20px;
 }
 </style>
 </head>
@@ -97,82 +113,68 @@ font-size:11px
 
 <div class="app">
 
-<div class="header">
-<div class="icon">📚</div>
-<h1>راهنمای مؤسسین</h1>
-<p>
-مدارس و مراکز غیردولتی<br>
-استان آذربایجان غربی
-</p>
-</div>
+    <div class="header">
+        <h1>📚 راهنمای مؤسسین</h1>
+        <p>مدارس و مراکز غیردولتی استان آذربایجان غربی</p>
+    </div>
 
-<div class="content">
+    <div class="menu">
 
-<div class="section-title">خدمات و راهنماها</div>
+        <!-- تأسیس مدرسه -->
+        <a href="school.html" class="menu-item">
+            <div class="menu-icon">🏫</div>
+            <div class="menu-text">
+                <strong>تأسیس مدرسه غیردولتی</strong>
+                <small>مراحل، مدارک و اقدامات لازم برای تأسیس مدرسه</small>
+            </div>
+            <div class="arrow">‹</div>
+        </a>
 
-<div class="menu">
+        <!-- تأسیس آموزشگاه -->
+        <a href="institute.html" class="menu-item">
+            <div class="menu-icon">📖</div>
+            <div class="menu-text">
+                <strong>تأسیس آموزشگاه</strong>
+                <small>مراحل تأسیس آموزشگاه زبان خارجی و علمی آزاد</small>
+            </div>
+            <div class="arrow">‹</div>
+        </a>
 
-<a href="school.html">
-<div class="menu-item">
-<div class="menu-icon">🏫</div>
-<div class="menu-text">
-<h3>تأسیس مدرسه غیردولتی</h3>
-<p>مراحل و مدارک موردنیاز تأسیس مدرسه</p>
-</div>
-<div class="arrow">‹</div>
-</div>
-</a>
+        <!-- راه اندازی -->
+        <a href="launch.html" class="menu-item">
+            <div class="menu-icon">🔧</div>
+            <div class="menu-text">
+                <strong>راه‌اندازی مدرسه یا مرکز</strong>
+                <small>مراحل معرفی مکان و راه‌اندازی مدرسه یا مرکز</small>
+            </div>
+            <div class="arrow">‹</div>
+        </a>
 
-<a href="institute.html">
-<div class="menu-item">
-<div class="menu-icon">📖</div>
-<div class="menu-text">
-<h3>تأسیس آموزشگاه</h3>
-<p>مراحل تأسیس آموزشگاه زبان و علمی آزاد</p>
-</div>
-<div class="arrow">‹</div>
-</div>
-</a>
+        <!-- معرفی مدیر -->
+        <a href="manager.html" class="menu-item">
+            <div class="menu-icon">👤</div>
+            <div class="menu-text">
+                <strong>معرفی مدیر</strong>
+                <small>مراحل و مدارک لازم برای معرفی مدیر</small>
+            </div>
+            <div class="arrow">‹</div>
+        </a>
 
-<a href="launch.html">
-<div class="menu-item">
-<div class="menu-icon">🔧</div>
-<div class="menu-text">
-<h3>راه‌اندازی مدرسه یا مرکز</h3>
-<p>مراحل معرفی مکان و دریافت مجوزهای لازم</p>
-</div>
-<div class="arrow">‹</div>
-</div>
-</a>
+        <!-- شرایط تأسیس -->
+        <a href="conditions.html" class="menu-item">
+            <div class="menu-icon">📋</div>
+            <div class="menu-text">
+                <strong>شرایط تأسیس</strong>
+                <small>شرایط و ضوابط تأسیس مدارس و مراکز غیردولتی</small>
+            </div>
+            <div class="arrow">‹</div>
+        </a>
 
-<a href="manager.html">
-<div class="menu-item">
-<div class="menu-icon">👤</div>
-<div class="menu-text">
-<h3>معرفی مدیر</h3>
-<p>مراحل و مدارک معرفی مدیر</p>
-</div>
-<div class="arrow">‹</div>
-</div>
-</a>
+    </div>
 
-<a href="conditions.html">
-<div class="menu-item">
-<div class="menu-icon">📋</div>
-<div class="menu-text">
-<h3>شرایط تأسیس</h3>
-<p>شرایط عمومی تأسیس مدارس و مراکز غیردولتی</p>
-</div>
-<div class="arrow">‹</div>
-</div>
-</a>
-
-</div>
-</div>
-
-<div class="footer">
-نسخه اولیه راهنمای مؤسسین
-</div>
+    <div class="footer">
+        نسخه اولیه راهنمای مؤسسین
+    </div>
 
 </div>
 
