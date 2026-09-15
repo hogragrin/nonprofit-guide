@@ -22,10 +22,10 @@ body {
     max-width: 520px;
     margin: auto;
     min-height: 100vh;
-    background: #ffffff;
+    background: #fff;
 }
 
-/* Header */
+/* هدر */
 .header {
     background: linear-gradient(135deg, #1769aa, #2196f3);
     color: white;
@@ -48,10 +48,9 @@ body {
     margin: 10px 0 0;
     font-size: 14px;
     line-height: 1.8;
-    opacity: 0.95;
 }
 
-/* Content */
+/* محتوای اصلی */
 .content {
     padding: 22px 16px 30px;
 }
@@ -62,7 +61,7 @@ body {
     margin: 5px 4px 15px;
 }
 
-/* Menu */
+/* کارت‌ها */
 .menu {
     display: flex;
     flex-direction: column;
@@ -78,12 +77,7 @@ body {
     padding: 17px 16px;
     min-height: 70px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-    transition: 0.2s;
-}
-
-.menu-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    cursor: pointer;
 }
 
 .menu-icon {
@@ -106,7 +100,6 @@ body {
 .menu-text h3 {
     margin: 0 0 5px;
     font-size: 16px;
-    color: #111827;
 }
 
 .menu-text p {
@@ -119,10 +112,71 @@ body {
 .arrow {
     font-size: 22px;
     color: #9ca3af;
-    margin-right: 8px;
 }
 
-/* Footer */
+/* صفحات داخلی */
+.page {
+    display: none;
+    padding: 20px 16px 35px;
+}
+
+.page.active {
+    display: block;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.back {
+    background: #eef6ff;
+    border: none;
+    border-radius: 12px;
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* مراحل */
+details {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    padding: 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+summary {
+    cursor: pointer;
+    padding: 17px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.details-content {
+    padding: 0 17px 17px;
+    line-height: 2;
+    font-size: 13px;
+    color: #374151;
+}
+
+.info-box {
+    background: #f3f7fb;
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 10px;
+}
+
 .footer {
     text-align: center;
     padding: 10px 20px 25px;
@@ -136,7 +190,10 @@ body {
 
 <div class="app">
 
-    <!-- Header -->
+<!-- ================= صفحه اصلی ================= -->
+
+<div id="home" class="active">
+
     <div class="header">
         <div class="icon">📚</div>
 
@@ -148,184 +205,333 @@ body {
         </p>
     </div>
 
-
-    <!-- Content -->
     <div class="content">
 
         <div class="section-title">
             خدمات و راهنماها
         </div>
 
-
         <div class="menu">
 
-
-            <!-- 1. تأسیس مدرسه -->
-            <a href="school.html"
-               style="text-decoration:none;color:inherit;">
-
-                <div class="menu-item">
-
-                    <div class="menu-icon">
-                        🏫
-                    </div>
-
-                    <div class="menu-text">
-
-                        <h3>
-                            تأسیس مدرسه غیردولتی
-                        </h3>
-
-                        <p>
-                            مراحل و مدارک موردنیاز تأسیس مدرسه
-                        </p>
-
-                    </div>
-
-                    <div class="arrow">
-                        ‹
-                    </div>
-
+            <div class="menu-item" onclick="showPage('school')">
+                <div class="menu-icon">🏫</div>
+                <div class="menu-text">
+                    <h3>تأسیس مدرسه غیردولتی</h3>
+                    <p>مراحل و مدارک موردنیاز تأسیس مدرسه</p>
                 </div>
+                <div class="arrow">‹</div>
+            </div>
 
-            </a>
-
-
-            <!-- 2. تأسیس آموزشگاه -->
-            <a href="institute.html"
-               style="text-decoration:none;color:inherit;">
-
-                <div class="menu-item">
-
-                    <div class="menu-icon">
-                        📖
-                    </div>
-
-                    <div class="menu-text">
-
-                        <h3>
-                            تأسیس آموزشگاه
-                        </h3>
-
-                        <p>
-                            مراحل تأسیس آموزشگاه زبان و علمی آزاد
-                        </p>
-
-                    </div>
-
-                    <div class="arrow">
-                        ‹
-                    </div>
-
+            <div class="menu-item" onclick="showPage('institute')">
+                <div class="menu-icon">📖</div>
+                <div class="menu-text">
+                    <h3>تأسیس آموزشگاه</h3>
+                    <p>مراحل تأسیس آموزشگاه زبان و علمی آزاد</p>
                 </div>
+                <div class="arrow">‹</div>
+            </div>
 
-            </a>
-
-
-            <!-- 3. راه‌اندازی -->
-            <a href="launch.html"
-               style="text-decoration:none;color:inherit;">
-
-                <div class="menu-item">
-
-                    <div class="menu-icon">
-                        🔧
-                    </div>
-
-                    <div class="menu-text">
-
-                        <h3>
-                            راه‌اندازی مدرسه یا مرکز
-                        </h3>
-
-                        <p>
-                            مراحل معرفی مکان و دریافت مجوزهای لازم
-                        </p>
-
-                    </div>
-
-                    <div class="arrow">
-                        ‹
-                    </div>
-
+            <div class="menu-item" onclick="showPage('launch')">
+                <div class="menu-icon">🔧</div>
+                <div class="menu-text">
+                    <h3>راه‌اندازی مدرسه یا مرکز</h3>
+                    <p>مراحل معرفی مکان و دریافت مجوزهای لازم</p>
                 </div>
+                <div class="arrow">‹</div>
+            </div>
 
-            </a>
-
-
-            <!-- 4. معرفی مدیر -->
-            <a href="manager.html"
-               style="text-decoration:none;color:inherit;">
-
-                <div class="menu-item">
-
-                    <div class="menu-icon">
-                        👤
-                    </div>
-
-                    <div class="menu-text">
-
-                        <h3>
-                            معرفی مدیر
-                        </h3>
-
-                        <p>
-                            مراحل و مدارک معرفی مدیر مدرسه یا مرکز
-                        </p>
-
-                    </div>
-
-                    <div class="arrow">
-                        ‹
-                    </div>
-
+            <div class="menu-item" onclick="showPage('manager')">
+                <div class="menu-icon">👤</div>
+                <div class="menu-text">
+                    <h3>معرفی مدیر</h3>
+                    <p>مراحل و مدارک معرفی مدیر</p>
                 </div>
+                <div class="arrow">‹</div>
+            </div>
 
-            </a>
-
-
-            <!-- 5. شرایط تأسیس -->
-            <a href="conditions.html"
-               style="text-decoration:none;color:inherit;">
-
-                <div class="menu-item">
-
-                    <div class="menu-icon">
-                        📋
-                    </div>
-
-                    <div class="menu-text">
-
-                        <h3>
-                            شرایط تأسیس
-                        </h3>
-
-                        <p>
-                            شرایط عمومی تأسیس مدارس و مراکز غیردولتی
-                        </p>
-
-                    </div>
-
-                    <div class="arrow">
-                        ‹
-                    </div>
-
+            <div class="menu-item" onclick="showPage('conditions')">
+                <div class="menu-icon">📋</div>
+                <div class="menu-text">
+                    <h3>شرایط تأسیس</h3>
+                    <p>شرایط عمومی تأسیس مدارس و مراکز غیردولتی</p>
                 </div>
-
-            </a>
-
+                <div class="arrow">‹</div>
+            </div>
 
         </div>
-
     </div>
 
-
-    <!-- Footer -->
     <div class="footer">
         نسخه اولیه راهنمای مؤسسین
     </div>
 
 </div>
+
+
+<!-- ================= تأسیس مدرسه ================= -->
+
+<div id="school" class="page">
+
+    <div class="page-header">
+        <button class="back" onclick="showPage('home')">→</button>
+        <div class="page-title">🏫 تأسیس مدرسه غیردولتی</div>
+    </div>
+
+    <details>
+        <summary>۱. ثبت درخواست درگاه ملی مجوزها</summary>
+        <div class="details-content">
+            <p>
+                درخواست تأسیس مدرسه از طریق درگاه ملی مجوزها ثبت می‌شود.
+            </p>
+            <div class="info-box">
+                📌 جزئیات این مرحله در نسخه نهایی تکمیل خواهد شد.
+            </div>
+        </div>
+    </details>
+
+    <details>
+        <summary>۲. تشکیل پرونده گزینش و حراست</summary>
+        <div class="details-content">
+
+            <p><strong>📁 مدارک لازم برای پرونده گزینش</strong></p>
+
+            <p>
+                مدارک موردنیاز پرونده گزینش طبق دستورالعمل‌های مربوطه
+                تهیه و ارائه می‌شود.
+            </p>
+
+            <p><strong>📁 مدارک لازم برای پرونده حراست</strong></p>
+
+            <p>
+                مدارک موردنیاز پرونده حراست نیز باید به‌صورت کامل
+                آماده و ارائه شود.
+            </p>
+
+            <div class="info-box">
+                ⚠️ نکته مهم: مدارک و جزئیات این مرحله باید مطابق
+                آخرین دستورالعمل منطقه تکمیل شود.
+            </div>
+
+        </div>
+    </details>
+
+    <details>
+        <summary>۳. تشکیل پرونده شورای نظارت</summary>
+        <div class="details-content">
+            <p>
+                پس از مشخص شدن نتیجه مراحل مربوط به گزینش و حراست،
+                پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
+            </p>
+
+            <div class="info-box">
+                📌 جزئیات مدارک این مرحله در نسخه نهایی تکمیل خواهد شد.
+            </div>
+        </div>
+    </details>
+
+    <details>
+        <summary>۴. تحویل پرونده به شعبه مشارکت‌های منطقه</summary>
+        <div class="details-content">
+
+            <p>
+                پرونده در بازه زمانی
+                <strong>۲۰ تا ۲۵ هر ماه</strong>
+                به شعبه مشارکت‌های منطقه تحویل داده شود.
+            </p>
+
+            <p>
+                📁 اصل پرونده به‌صورت فیزیکی تحویل شعبه مشارکت‌ها می‌شود.
+            </p>
+
+            <p>
+                📄 اسکن رنگی اصل مدارک به همراه پاسخ استعلام‌های
+                حراست و گزینش، به ترتیب مراحل، در قالب یک فایل PDF تهیه شود.
+            </p>
+
+            <p>
+                📱 فایل PDF از طریق ایتا برای کارشناس مربوطه ارسال شود.
+            </p>
+
+            <div class="info-box">
+                ⚠️ مهم:
+                فایل PDF باید یک فایل واحد، رنگی و مرتب و به ترتیب مدارک باشد.
+            </div>
+
+        </div>
+    </details>
+
+</div>
+
+
+<!-- ================= تأسیس آموزشگاه ================= -->
+
+<div id="institute" class="page">
+
+    <div class="page-header">
+        <button class="back" onclick="showPage('home')">→</button>
+        <div class="page-title">📖 تأسیس آموزشگاه</div>
+    </div>
+
+    <details>
+        <summary>۱. آموزشگاه زبان‌های خارجی</summary>
+        <div class="details-content">
+            <p>
+                مراحل تأسیس آموزشگاه زبان‌های خارجی در این بخش قرار می‌گیرد.
+            </p>
+        </div>
+    </details>
+
+    <details>
+        <summary>۲. آموزشگاه علمی آزاد</summary>
+        <div class="details-content">
+            <p>
+                مراحل تأسیس آموزشگاه علمی آزاد در این بخش قرار می‌گیرد.
+            </p>
+        </div>
+    </details>
+
+    <div class="info-box">
+        📌 جزئیات این بخش در ادامه تکمیل خواهد شد.
+    </div>
+
+</div>
+
+
+<!-- ================= راه‌اندازی ================= -->
+
+<div id="launch" class="page">
+
+    <div class="page-header">
+        <button class="back" onclick="showPage('home')">→</button>
+        <div class="page-title">🔧 راه‌اندازی مدرسه یا مرکز</div>
+    </div>
+
+    <details>
+        <summary>۱. ثبت درخواست در سامانه ملی مجوزها</summary>
+        <div class="details-content">
+            <p>
+                درخواست مربوط به راه‌اندازی از طریق سامانه ملی مجوزها ثبت می‌شود.
+            </p>
+        </div>
+    </details>
+
+    <details>
+        <summary>۲. معرفی مکان به آموزش و پرورش</summary>
+        <div class="details-content">
+
+            <p>
+                مکان موردنظر به آموزش و پرورش معرفی می‌شود تا
+                نامه بازدید مهندسین مشاور به نوسازی ارسال شود.
+            </p>
+
+            <p><strong>مدارک لازم:</strong></p>
+
+            <p>
+                📄 درخواست کتبی
+            </p>
+
+            <p>
+                📄 گواهی پایان کار یا پروانه ساخت
+            </p>
+
+            <p>
+                📷 عکس نمای ساختمان
+            </p>
+
+        </div>
+    </details>
+
+    <details>
+        <summary>۳. تشکیل پرونده شورای نظارت</summary>
+        <div class="details-content">
+            <p>
+                پس از دریافت مجوز نوسازی، پرونده شورای نظارت تشکیل می‌شود.
+            </p>
+        </div>
+    </details>
+
+    <div class="info-box">
+        📌 ادامه مراحل پس از تکمیل اطلاعات اضافه خواهد شد.
+    </div>
+
+</div>
+
+
+<!-- ================= معرفی مدیر ================= -->
+
+<div id="manager" class="page">
+
+    <div class="page-header">
+        <button class="back" onclick="showPage('home')">→</button>
+        <div class="page-title">👤 معرفی مدیر</div>
+    </div>
+
+    <details>
+        <summary>مراحل معرفی مدیر</summary>
+        <div class="details-content">
+
+            <p>
+                مراحل و مدارک موردنیاز معرفی مدیر مدرسه یا مرکز
+                در این قسمت قرار خواهد گرفت.
+            </p>
+
+            <div class="info-box">
+                📌 این بخش پس از دریافت اطلاعات کامل تکمیل می‌شود.
+            </div>
+
+        </div>
+    </details>
+
+</div>
+
+
+<!-- ================= شرایط تأسیس ================= -->
+
+<div id="conditions" class="page">
+
+    <div class="page-header">
+        <button class="back" onclick="showPage('home')">→</button>
+        <div class="page-title">📋 شرایط تأسیس</div>
+    </div>
+
+    <details>
+        <summary>شرایط تأسیس مدرسه و مرکز غیردولتی</summary>
+        <div class="details-content">
+
+            <p>
+                شرایط عمومی تأسیس مدارس و مراکز غیردولتی
+                در این قسمت قرار می‌گیرد.
+            </p>
+
+            <div class="info-box">
+                📌 محتوای کامل این بخش در نسخه نهایی وارد می‌شود.
+            </div>
+
+        </div>
+    </details>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+function showPage(pageId) {
+
+    var pages = document.querySelectorAll('.page, #home');
+
+    pages.forEach(function(page) {
+        page.classList.remove('active');
+    });
+
+    document.getElementById(pageId).classList.add('active');
+
+    window.scrollTo(0, 0);
+}
+
+</script>
 
 </body>
 </html>
