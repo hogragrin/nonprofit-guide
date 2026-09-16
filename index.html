@@ -7,170 +7,245 @@
 <title>راهنمای مؤسسین</title>
 
 <style>
-* {
-    box-sizing: border-box;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-body {
-    margin: 0;
-    font-family: Tahoma, Arial, sans-serif;
-    background: #f4f6f8;
-    color: #222;
-}
+    body {
+        margin: 0;
+        font-family: Tahoma, Arial, sans-serif;
+        background: #f4f6f8;
+        color: #222;
+        line-height: 1.9;
+    }
 
-.app {
-    max-width: 500px;
-    margin: auto;
-    min-height: 100vh;
-    background: white;
-}
+    .header {
+        background: #1769aa;
+        color: white;
+        padding: 25px 18px;
+        text-align: center;
+    }
 
-.header {
-    background: #1565c0;
-    color: white;
-    padding: 28px 20px 24px;
-    text-align: center;
-}
+    .header h1 {
+        margin: 0;
+        font-size: 25px;
+    }
 
-.header h1 {
-    margin: 0 0 8px;
-    font-size: 24px;
-}
+    .header p {
+        margin: 5px 0 0;
+        font-size: 14px;
+    }
 
-.header p {
-    margin: 0;
-    font-size: 14px;
-    opacity: 0.9;
-}
+    .container {
+        max-width: 650px;
+        margin: auto;
+        padding: 15px;
+    }
 
-.menu {
-    padding: 18px 14px;
-}
+    .card {
+        background: white;
+        border-radius: 14px;
+        padding: 18px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
 
-.menu-item {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    text-decoration: none;
-    color: #222;
-    background: #fff;
-    border: 1px solid #e1e5e9;
-    border-radius: 16px;
-    padding: 17px 16px;
-    margin-bottom: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-    transition: 0.15s;
-}
+    .card h2 {
+        font-size: 19px;
+        margin-top: 0;
+        color: #1769aa;
+    }
 
-.menu-item:active {
-    transform: scale(0.98);
-}
+    .card h3 {
+        font-size: 17px;
+        margin-bottom: 5px;
+        color: #333;
+    }
 
-.menu-icon {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-    border-radius: 14px;
-    background: #eaf3ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-}
+    .warning {
+        background: #fff7df;
+        border-right: 5px solid #e5a900;
+    }
 
-.menu-text {
-    flex: 1;
-}
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
 
-.menu-text strong {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 6px;
-}
+    .link-button {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background: #eef5fb;
+        color: #1769aa;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
 
-.menu-text small {
-    display: block;
-    color: #777;
-    font-size: 12px;
-    line-height: 1.7;
-}
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
 
-.arrow {
-    font-size: 22px;
-    color: #999;
-}
+    .menu-item {
+        display: block;
+        background: white;
+        color: #222;
+        text-decoration: none;
+        padding: 17px;
+        border-radius: 14px;
+        font-size: 17px;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
 
-.footer {
-    text-align: center;
-    color: #999;
-    font-size: 11px;
-    padding: 20px;
-}
+    .menu-item:hover {
+        background: #eef5fb;
+    }
+
+    .footer {
+        text-align: center;
+        color: #777;
+        font-size: 13px;
+        padding: 20px 0;
+    }
 </style>
 </head>
 
 <body>
 
-<div class="app">
+<div class="header">
+    <h1>📚 راهنمای مؤسسین</h1>
+    <p>مدارس و مراکز غیردولتی استان آذربایجان غربی</p>
+</div>
 
-    <div class="header">
-        <h1>📚 راهنمای مؤسسین</h1>
-        <p>مدارس و مراکز غیردولتی استان آذربایجان غربی</p>
+<div class="container">
+
+    <!-- معرفی -->
+    <div class="card">
+        <h2>ℹ️ درباره این راهنما</h2>
+
+        <p>
+            باسلام خدمت بزرگواران
+        </p>
+
+        <p>
+            این راهنما جهت راهنمایی و اطلاع‌رسانی‌های لازم در خصوص
+            تأسیس و راه‌اندازی مدارس غیردولتی و مراکز آموزشی و پرورشی
+            (آموزشگاه‌ها) با هدف تسهیل روند دریافت مجوزها تهیه شده است.
+        </p>
+
+        <div class="links">
+
+            <a class="link-button"
+               href="https://eitaa.com/mosharekatha292717"
+               target="_blank">
+                📢 کانال مشارکت‌های مهاباد
+            </a>
+
+            <a class="link-button"
+               href="https://eitaa.com/ahmadnezhad1361"
+               target="_blank">
+                👤 ارتباط با کارشناس مشارکت‌ها
+            </a>
+
+        </div>
     </div>
 
-    <div class="menu">
 
-        <!-- 1. شرایط تأسیس -->
-        <a href="conditions.html" class="menu-item">
-            <div class="menu-icon">📋</div>
-            <div class="menu-text">
-                <strong>شرایط تأسیس</strong>
-                <small>شرایط و ضوابط تأسیس مدارس و مراکز غیردولتی</small>
-            </div>
-            <div class="arrow">‹</div>
-        </a>
+    <!-- مسیر کلی -->
+    <div class="card">
 
-        <!-- 2. تأسیس مدرسه -->
-        <a href="school.html" class="menu-item">
-            <div class="menu-icon">🏫</div>
-            <div class="menu-text">
-                <strong>تأسیس مدرسه غیردولتی</strong>
-                <small>مراحل، مدارک و اقدامات لازم برای تأسیس مدرسه</small>
-            </div>
-            <div class="arrow">‹</div>
-        </a>
+        <h2>🗺️ مسیر کلی دریافت مجوز</h2>
 
-        <!-- 3. تأسیس آموزشگاه -->
-        <a href="institute.html" class="menu-item">
-            <div class="menu-icon">📖</div>
-            <div class="menu-text">
-                <strong>تأسیس آموزشگاه</strong>
-                <small>مراحل تأسیس آموزشگاه زبان خارجی و علمی آزاد</small>
-            </div>
-            <div class="arrow">‹</div>
-        </a>
+        <p>
+            برای تأسیس مدرسه یا مرکز (آموزشگاه) آموزشی و پرورشی،
+            به مجوزهای زیر نیاز دارید:
+        </p>
 
-        <!-- 4. راه‌اندازی -->
-        <a href="launch.html" class="menu-item">
-            <div class="menu-icon">🔧</div>
-            <div class="menu-text">
-                <strong>راه‌اندازی مدرسه یا مرکز</strong>
-                <small>مراحل معرفی مکان و راه‌اندازی مدرسه یا مرکز</small>
-            </div>
-            <div class="arrow">‹</div>
-        </a>
+        <p>
+            <strong>۱- مجوز تأسیس (موافقت اصولی)</strong><br>
+            <strong>۲- مجوز راه‌اندازی</strong>
+        </p>
 
-        <!-- 5. معرفی مدیر -->
-        <a href="manager.html" class="menu-item">
-            <div class="menu-icon">👤</div>
-            <div class="menu-text">
-                <strong>معرفی مدیر</strong>
-                <small>مراحل و مدارک لازم برای معرفی مدیر</small>
-            </div>
-            <div class="arrow">‹</div>
-        </a>
+        <h3>الف) دریافت مجوز تأسیس</h3>
+
+        <p>
+            دریافت مجوز تأسیس نیازمند تشکیل پرونده برای
+            گزینش، حراست و شورای نظارت استان می‌باشد.
+            مدارک لازم برای تشکیل پرونده‌ها در بخش‌های مربوطه درج شده است.
+        </p>
+
+        <p>
+            ⏱️ بر اساس اطلاعات اجرایی فعلی، فرآیند صدور مجوز تأسیس
+            ممکن است بیشتر از ۷ ماه به طول انجامد.
+        </p>
+
+        <h3>ب) دریافت مجوز راه‌اندازی</h3>
+
+        <p>
+            پس از صدور مجوز تأسیس (موافقت اصولی) از سوی شورای نظارت استان،
+            می‌توانید برای دریافت مجوز راه‌اندازی اقدام نمایید.
+            مراحل دریافت مجوز راه‌اندازی در بخش مربوطه توضیح داده شده است.
+        </p>
+
+        <p>
+            ⏱️ بر اساس اطلاعات اجرایی فعلی، فرآیند صدور مجوز راه‌اندازی
+            ممکن است بیشتر از ۵ ماه به طول انجامد.
+        </p>
 
     </div>
+
+
+    <!-- هشدار -->
+    <div class="card warning">
+
+        <h2>⚠️ نکته مهم</h2>
+
+        <p>
+            مسئولیت عدم دقت در تکمیل فرم‌ها و ناقص بودن مدارک،
+            که منجر به تأخیر در صدور مجوزها گردد،
+            متوجه شخص متقاضی می‌باشد.
+        </p>
+
+    </div>
+
+
+    <!-- منوی اصلی -->
+    <div class="card">
+
+        <h2>📋 بخش‌های راهنما</h2>
+
+        <div class="menu">
+
+            <a href="conditions.html" class="menu-item">
+                📋 شرایط تأسیس
+            </a>
+
+            <a href="school.html" class="menu-item">
+                🏫 تأسیس مدرسه غیردولتی
+            </a>
+
+            <a href="institute.html" class="menu-item">
+                📖 تأسیس آموزشگاه
+            </a>
+
+            <a href="launch.html" class="menu-item">
+                🔧 راه‌اندازی مدرسه یا مرکز
+            </a>
+
+            <a href="manager.html" class="menu-item">
+                👤 معرفی مدیر
+            </a>
+
+        </div>
+
+    </div>
+
 
     <div class="footer">
         نسخه اولیه راهنمای مؤسسین
