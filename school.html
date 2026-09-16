@@ -3,174 +3,435 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>تأسیس مدرسه غیردولتی</title>
 
 <style>
-*{box-sizing:border-box}
-body{
-margin:0;
-font-family:Tahoma,Arial,sans-serif;
-background:#f3f6fa;
-color:#1f2937
-}
-.app{
-max-width:520px;
-margin:auto;
-min-height:100vh;
-background:#fff
-}
-.header{
-background:linear-gradient(135deg,#1769aa,#2196f3);
-color:#fff;
-padding:20px;
-border-radius:0 0 28px 28px
-}
-.back{
-display:inline-block;
-color:#fff;
-text-decoration:none;
-font-size:14px;
-margin-bottom:18px
-}
-.header h1{
-margin:0;
-font-size:21px;
-line-height:1.8
-}
-.content{padding:20px 16px 35px}
-details{
-background:#fff;
-border:1px solid #e5e7eb;
-border-radius:16px;
-margin-bottom:12px;
-box-shadow:0 3px 10px rgba(0,0,0,.04);
-overflow:hidden
-}
-summary{
-cursor:pointer;
-padding:18px;
-font-weight:bold;
-font-size:15px;
-line-height:1.8
-}
-.details-content{
-padding:0 18px 18px;
-font-size:13px;
-line-height:2.1;
-color:#374151
-}
-.info{
-background:#eef6ff;
-border-radius:12px;
-padding:12px;
-margin-top:12px
-}
-.footer{
-text-align:center;
-padding:10px 20px 25px;
-color:#9ca3af;
-font-size:11px
-}
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Tahoma, Arial, sans-serif;
+        background: #f4f6f8;
+        color: #222;
+        line-height: 1.9;
+    }
+
+    .header {
+        background: #1769aa;
+        color: white;
+        padding: 22px 18px;
+        text-align: center;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 23px;
+    }
+
+    .container {
+        max-width: 650px;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .back {
+        display: inline-block;
+        text-decoration: none;
+        color: #1769aa;
+        background: white;
+        padding: 8px 14px;
+        border-radius: 9px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    details {
+        background: white;
+        border-radius: 14px;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        overflow: hidden;
+    }
+
+    summary {
+        cursor: pointer;
+        padding: 16px;
+        font-size: 17px;
+        font-weight: bold;
+        color: #1769aa;
+    }
+
+    .content {
+        padding: 0 18px 18px;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .content h3 {
+        font-size: 16px;
+        color: #333;
+        margin-top: 18px;
+    }
+
+    .note {
+        background: #fff7df;
+        border-right: 4px solid #e0a000;
+        padding: 12px;
+        margin-top: 12px;
+        border-radius: 8px;
+    }
+
+    .important {
+        background: #ffe9e9;
+        border-right: 4px solid #d33;
+        padding: 12px;
+        margin-top: 12px;
+        border-radius: 8px;
+    }
+
+    ol {
+        padding-right: 25px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    .footer {
+        text-align: center;
+        color: #777;
+        font-size: 13px;
+        padding: 20px 0;
+    }
 </style>
 </head>
 
 <body>
 
-<div class="app">
-
 <div class="header">
-<a class="back" href="index.html">→ بازگشت به صفحه اصلی</a>
-<h1>🏫 تأسیس مدرسه غیردولتی</h1>
+    <h1>🏫 تأسیس مدرسه غیردولتی</h1>
 </div>
 
-<div class="content">
+<div class="container">
 
-<details>
-<summary>۱. ثبت درخواست درگاه ملی مجوزها</summary>
-<div class="details-content">
-<p>
-درخواست تأسیس مدرسه از طریق درگاه ملی مجوزها ثبت می‌شود.
-</p>
-<div class="info">
-📌 جزئیات این مرحله در حال تکمیل است.
-</div>
-</div>
-</details>
+    <a href="index.html" class="back">
+        ↩️ بازگشت به صفحه اصلی
+    </a>
 
-<details>
-<summary>۲. تشکیل پرونده گزینش و حراست</summary>
-<div class="details-content">
 
-<p><strong>📁 مدارک لازم برای پرونده گزینش</strong></p>
+    <!-- گام اول -->
+    <details>
+        <summary>۱️⃣ گام اول: ثبت‌نام در درگاه ملی مجوزها</summary>
 
-<p>
-مدارک موردنیاز پرونده گزینش تهیه و برای تشکیل پرونده ارائه می‌شود.
-</p>
+        <div class="content">
 
-<p><strong>📁 مدارک لازم برای پرونده حراست</strong></p>
+            <p>
+                مراجعه به سامانه درگاه ملی مجوزها، ثبت درخواست
+                و پرینت کد درخواست اخذ شده از سامانه.
+            </p>
 
-<p>
-مدارک موردنیاز پرونده حراست نیز تهیه و ارائه می‌شود.
-</p>
+            <p>
+                همچنین اخذ گواهی عدم سوءپیشینه کیفری از دفاتر
+                خدمات قضایی و بارگذاری مدارک لازم.
+            </p>
 
-<div class="info">
-⚠️ مدارک و جزئیات این مرحله باید مطابق آخرین دستورالعمل منطقه تکمیل شود.
-</div>
+            <div class="note">
+                📌 پس از ثبت درخواست، به سایت
+                <strong>mosharekatha.ir</strong>
+                مراجعه کرده و با نام کاربری و رمز عبورتان وارد سایت شوید.
+            </div>
 
-</div>
-</details>
+            <h3>📋 پیگیری وضعیت مجوز</h3>
 
-<details>
-<summary>۳. تشکیل پرونده شورای نظارت</summary>
-<div class="details-content">
+            <p>
+                کارتابلی که به آن وارد شده‌اید متعلق به شماست
+                و در سمت راست و بالای صفحه نام شما نوشته شده است.
+            </p>
 
-<p>
-پس از مشخص شدن نتیجه مراحل گزینش و حراست،
-پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
-</p>
+            <p>
+                در پایین نام شما چند آیتم وجود دارد.
+                بخش <strong>«مجوزها»</strong> را انتخاب کرده و
+                وارد قسمت <strong>«مجوزهای تأسیس»</strong> شوید.
+            </p>
 
-<div class="info">
-📌 جزئیات مدارک این مرحله در حال تکمیل است.
-</div>
+            <p>
+                از این قسمت می‌توانید اقدامات انجام‌شده در مورد
+                مجوزتان را به‌صورت آنلاین پیگیری نمایید.
+            </p>
 
-</div>
-</details>
+        </div>
+    </details>
 
-<details>
-<summary>۴. تحویل پرونده به شعبه مشارکت‌های منطقه</summary>
-<div class="details-content">
 
-<p>
-پرونده در بازه زمانی
-<strong>۲۰ تا ۲۵ هر ماه</strong>
-به شعبه مشارکت‌های منطقه تحویل داده شود.
-</p>
+    <!-- گام دوم -->
+    <details>
+        <summary>۲️⃣ گام دوم: تشکیل پرونده گزینش و حراست</summary>
 
-<p>
-📁 اصل پرونده به‌صورت فیزیکی تحویل شعبه مشارکت‌ها می‌شود.
-</p>
+        <div class="content">
 
-<p>
-📄 اسکن رنگی اصل مدارک به همراه پاسخ استعلام‌های حراست و گزینش،
-به ترتیب مراحل، در قالب یک فایل PDF تهیه شود.
-</p>
+            <div class="note">
+                👈 پس از ثبت درخواست در درگاه ملی مجوزها،
+                حداکثر ظرف مدت یک هفته پرونده گزینش و حراست را
+                به ترتیب زیر کامل کرده و به آموزش و پرورش تحویل دهید.
+            </div>
 
-<p>
-📱 فایل PDF از طریق ایتا برای کارشناس مربوطه ارسال شود.
-</p>
+            <div class="important">
+                <strong>⚠️ توجه:</strong><br>
+                پرونده گزینش ویژه نیروهای آزاد و بازنشسته
+                آموزش و پرورش می‌باشد.<br><br>
+                همکاران فرهنگی شاغل، نیاز به تشکیل پرونده گزینش ندارند.
+            </div>
 
-<div class="info">
-⚠️ مهم: فایل PDF باید یک فایل واحد، رنگی و مرتب و به ترتیب مدارک باشد.
-</div>
 
-</div>
-</details>
+            <!-- پرونده گزینش -->
+            <details>
+                <summary>📁 مدارک لازم برای پرونده گزینش</summary>
 
-</div>
+                <div class="content">
 
-<div class="footer">
-راهنمای مؤسسین مدارس و مراکز غیردولتی
-</div>
+                    <ol>
+                        <li>پوشه سفید</li>
+
+                        <li>درخواست کتبی</li>
+
+                        <li>
+                            تکمیل فرم اطلاعات فردی در دو نسخه
+                            (فرم مربوطه جهت چاپ در پیام بعدی قرار داده شده است)
+                        </li>
+
+                        <li>
+                            تصویر تمام صفحات شناسنامه برابر با اصل
+                        </li>
+
+                        <li>
+                            تصویر کارت ملی برابر با اصل
+                        </li>
+
+                        <li>
+                            تصویر پایان خدمت برابر با اصل
+                        </li>
+
+                        <li>
+                            تصویر آخرین مدرک تحصیلی برابر با اصل
+                        </li>
+
+                        <li>یک قطعه عکس ۴×۳</li>
+
+                        <li>گیره ۱ عدد</li>
+                    </ol>
+
+
+                    <div class="important">
+
+                        <strong>👈👈 نکات مهم</strong>
+
+                        <ol>
+
+                            <li>
+                                مدارک باید به ترتیب فوق در پوشه سفید
+                                قرار داده شود، در غیر این صورت از تحویل
+                                گرفتن پرونده معذوریم.
+                            </li>
+
+                            <li>
+                                مدارک باید در دفترخانه برابر با اصل گردند.
+                            </li>
+
+                            <li>
+                                دو عدد از عکس‌های مربوط به ردیف ۸ را
+                                در محل الصاق عکس فرم اطلاعات فردی بچسبانید.
+                            </li>
+
+                            <li>
+                                پس از اینکه پرونده گزینش و حراست را کامل نمودید،
+                                آن را سریعاً به واحد مشارکت‌های مردمی
+                                آموزش و پرورش مهاباد تحویل دهید.
+                            </li>
+
+                        </ol>
+
+                    </div>
+
+                </div>
+            </details>
+
+
+            <!-- پرونده حراست -->
+            <details>
+                <summary>📁 مدارک لازم برای پرونده حراست</summary>
+
+                <div class="content">
+
+                    <ol>
+
+                        <li>پوشه سبز</li>
+
+                        <li>
+                            پرینت کد درخواست از سامانه مشارکت‌ها
+                            و تحویل درخواست دستنویس
+                            (شامل مشخصات کامل متقاضی، نوع مدرسه یا مرکز،
+                            نوع جنسیت مدرسه یا مرکز، مقطع مدرسه)
+                        </li>
+
+                        <li>
+                            تصویر صفحه اول شناسنامه و تصویر پشت و روی
+                            کارت ملی در یک A4
+                        </li>
+
+                        <li>
+                            تکمیل فرم شرح مختصری از تاریخچه زندگی
+                        </li>
+
+                        <li>
+                            تصویر تمام صفحات شناسنامه و کارت ملی
+                        </li>
+
+                        <li>تصویر پایان خدمت</li>
+
+                        <li>تصویر سوءپیشینه</li>
+
+                        <li>
+                            فرم ۵۰۲
+                            (نیروهای شاغل رسمی آموزش و پرورش)
+                        </li>
+
+                        <li>
+                            تصویر حکم کارگزینی
+                            (نیروهای شاغل رسمی آموزش و پرورش)
+                        </li>
+
+                        <li>تصویر آخرین مدرک تحصیلی</li>
+
+                        <li>
+                            تصویر فیش واریز شده در هنگام ثبت‌نام
+                            در درگاه ملی مجوزها (مربوط به گام اول)
+                        </li>
+
+                        <li>
+                            یک قطعه عکس ۴×۳
+                        </li>
+
+                        <li>
+                            گیره ۱ عدد
+                        </li>
+
+                    </ol>
+
+
+                    <div class="note">
+
+                        <strong>💳 نکته مهم درباره واریز وجه</strong>
+
+                        <p>
+                            واریز مبلغ مورد نظر حتماً باید از طریق بانک انجام گیرد.
+                        </p>
+
+                    </div>
+
+
+                    <div class="important">
+
+                        <strong>👈👈 نکات مهم</strong>
+
+                        <ol>
+
+                            <li>
+                                مدارک باید به ترتیب فوق در پوشه سبز
+                                قرار داده شود، در غیر این صورت از تحویل
+                                گرفتن پرونده معذوریم.
+                            </li>
+
+                            <li>
+                                فرم لازم برای این پرونده (ردیف ۴)
+                                بعد از این پیام قرار داده شده است.
+                            </li>
+
+                            <li>
+                                پس از اینکه پرونده حراست و گزینش را کامل نمودید،
+                                پوشه‌های سبز و سفید را سریعاً به واحد مشارکت‌های
+                                مردمی آموزش و پرورش مهاباد تحویل دهید.
+                            </li>
+
+                            <li>
+                                بعد از مراجعه و صدور معرفی‌نامه حراست از سوی
+                                شعبه مشارکت‌ها، متقاضی باید پوشه سبز را شخصاً
+                                تحویل واحد حراست دهد.
+                            </li>
+
+                        </ol>
+
+                    </div>
+
+                </div>
+            </details>
+
+        </div>
+    </details>
+
+
+    <!-- گام سوم -->
+    <details>
+        <summary>۳️⃣ گام سوم: تشکیل پرونده شورای نظارت</summary>
+
+        <div class="content">
+
+            <p>
+                پس از انجام مراحل مربوط به گزینش و حراست،
+                پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
+            </p>
+
+            <div class="note">
+                📌 جزئیات این مرحله در حال تکمیل است.
+            </div>
+
+        </div>
+    </details>
+
+
+    <!-- گام چهارم -->
+    <details>
+        <summary>۴️⃣ گام چهارم: تحویل پرونده به شعبه مشارکت‌های منطقه</summary>
+
+        <div class="content">
+
+            <h3>📅 زمان تحویل پرونده</h3>
+
+            <p>
+                تحویل پرونده به شعبه مشارکت‌های منطقه
+                از <strong>۲۰م تا ۲۵م هر ماه</strong> انجام می‌شود.
+            </p>
+
+            <h3>📁 نحوه تحویل مدارک</h3>
+
+            <p>
+                پرونده فیزیکی را به شعبه مشارکت‌های منطقه تحویل دهید.
+            </p>
+
+            <p>
+                همچنین اسکن رنگی اصل مدارک به همراه پاسخ استعلام‌های
+                گزینش و حراست را به ترتیب مراحل، در قالب یک فایل PDF
+                آماده نمایید.
+            </p>
+
+            <p>
+                فایل PDF را از طریق ایتا برای کارشناس مربوطه ارسال نمایید.
+            </p>
+
+            <div class="important">
+                ⚠️ <strong>نکته مهم:</strong><br>
+                فایل PDF باید به‌صورت یک فایل واحد،
+                رنگی و شامل تمام مدارک به ترتیب مراحل باشد.
+            </div>
+
+        </div>
+    </details>
+
+
+    <div class="footer">
+        راهنمای مؤسسین مدارس و مراکز غیردولتی
+    </div>
 
 </div>
 
