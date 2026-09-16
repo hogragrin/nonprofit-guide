@@ -3,78 +3,210 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>شرایط تأسیس</title>
 
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f3f6fa;color:#1f2937}
-.app{max-width:520px;margin:auto;min-height:100vh;background:#fff}
-.header{background:linear-gradient(135deg,#1769aa,#2196f3);color:#fff;padding:20px;border-radius:0 0 28px 28px}
-.back{display:inline-block;color:#fff;text-decoration:none;font-size:14px;margin-bottom:18px}
-.header h1{margin:0;font-size:21px;line-height:1.8}
-.content{padding:20px 16px 35px}
-details{background:#fff;border:1px solid #e5e7eb;border-radius:16px;margin-bottom:12px;box-shadow:0 3px 10px rgba(0,0,0,.04);overflow:hidden}
-summary{cursor:pointer;padding:18px;font-weight:bold;font-size:15px;line-height:1.8}
-.details-content{padding:0 18px 18px;font-size:13px;line-height:2.1;color:#374151}
-.info{background:#eef6ff;border-radius:12px;padding:12px;margin-top:12px}
-.footer{text-align:center;padding:10px 20px 25px;color:#9ca3af;font-size:11px}
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Tahoma, Arial, sans-serif;
+        background: #f4f6f8;
+        color: #222;
+        line-height: 1.9;
+    }
+
+    .header {
+        background: #1769aa;
+        color: white;
+        padding: 22px 18px;
+        text-align: center;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 23px;
+    }
+
+    .container {
+        max-width: 650px;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .back {
+        display: inline-block;
+        text-decoration: none;
+        color: #1769aa;
+        background: white;
+        padding: 8px 14px;
+        border-radius: 9px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .card {
+        background: white;
+        border-radius: 14px;
+        padding: 18px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .important {
+        background: #fff4d6;
+        border-right: 5px solid #e0a000;
+    }
+
+    .important-title {
+        color: #a66a00;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .conditions {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .conditions li {
+        padding: 10px 5px;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .conditions li:last-child {
+        border-bottom: none;
+    }
+
+    .conditions li::before {
+        content: "◀ ";
+        color: #1769aa;
+        font-weight: bold;
+    }
+
+    .very-important {
+        background: #ffe9e9;
+        border-right: 5px solid #d33;
+        text-align: center;
+        font-weight: bold;
+        color: #b00000;
+        font-size: 18px;
+    }
+
+    .footer {
+        text-align: center;
+        color: #777;
+        font-size: 13px;
+        padding: 20px 0;
+    }
 </style>
 </head>
 
 <body>
 
-<div class="app">
-
 <div class="header">
-<a class="back" href="index.html">→ بازگشت به صفحه اصلی</a>
-<h1>📋 شرایط تأسیس</h1>
+    <h1>📋 شرایط تأسیس مدرسه / مرکز غیردولتی</h1>
 </div>
 
-<div class="content">
+<div class="container">
 
-<details>
-<summary>🏫 شرایط تأسیس مدرسه غیردولتی</summary>
-<div class="details-content">
+    <a href="index.html" class="back">
+        ↩️ بازگشت به صفحه اصلی
+    </a>
 
-<p>
-شرایط تأسیس مدرسه غیردولتی در این بخش ارائه خواهد شد.
-</p>
 
-<div class="info">
-📌 محتوای کامل شرایط تأسیس در نسخه نهایی وارد می‌شود.
-</div>
+    <!-- هشدار مهم -->
+    <div class="card important">
 
-</div>
-</details>
+        <p class="important-title">
+            ⚠️ خیلی مهم
+        </p>
 
-<details>
-<summary>📖 شرایط تأسیس آموزشگاه</summary>
-<div class="details-content">
+        <p>
+            چنانچه تمامی شرایط ذیل را دارا هستید مراحل بعدی را طی کنید،
+            در غیر اینصورت از ادامه مراحل و تشکیل پرونده‌ها خودداری نمایید.
+        </p>
 
-<p>
-شرایط تأسیس آموزشگاه زبان‌های خارجی و آموزشگاه علمی آزاد
-در این قسمت قرار خواهد گرفت.
-</p>
+    </div>
 
-</div>
-</details>
 
-<details>
-<summary>📌 مدارک و الزامات عمومی</summary>
-<div class="details-content">
+    <!-- شرایط -->
+    <div class="card">
 
-<p>
-مدارک و الزامات عمومی موردنیاز در این بخش قرار خواهد گرفت.
-</p>
+        <ul class="conditions">
 
-</div>
-</details>
+            <li>
+                تابعیت جمهوری اسلامی ایران
+            </li>
 
-</div>
+            <li>
+                اعتقاد و التزام به مبانی و احکام اسلام،
+                ایمان و برخورداری از حسن شهرت
+            </li>
 
-<div class="footer">
-راهنمای مؤسسین مدارس و مراکز غیردولتی
-</div>
+            <li>
+                التزام عملی به قانون اساسی و ولایت فقیه
+            </li>
+
+            <li>
+                نداشتن وابستگی به رژیم گذشته یا گروهک‌های
+                منحرف و غیرقانونی
+            </li>
+
+            <li>
+                نداشتن پیشینه کیفری مؤثر
+            </li>
+
+            <li>
+                حداقل مدرک کارشناسی یا معادل آن
+            </li>
+
+            <li>
+                حداقل ۳۰ سال سن
+            </li>
+
+            <li>
+                تأهل برای مردان
+            </li>
+
+            <li>
+                داشتن حداقل ۵ سال سابقه آموزشی، پژوهشی یا فرهنگی
+                (سابقه بیمه ملاک می‌باشد)
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- توضیح سابقه -->
+    <div class="card important">
+
+        <p>
+            در صورتی که ۵ سال سابقه بیمه مربوط به یکی از فعالیت‌های
+            آموزشی، پرورشی یا فرهنگی را ندارید، از ادامه مراحل خودداری
+            نمایید؛ چون مجوز صادر نخواهد شد.
+        </p>
+
+    </div>
+
+
+    <!-- هشدار پایانی -->
+    <div class="card very-important">
+
+        ⚠️ خیلی خیلی مهم 👆
+
+    </div>
+
+
+    <div class="footer">
+        راهنمای مؤسسین مدارس و مراکز غیردولتی
+    </div>
 
 </div>
 
