@@ -3,21 +3,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تأسیس آموزشگاه</title>
+
+<title>مراحل تأسیس و راه‌اندازی آموزشگاه</title>
 
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f3f6fa;color:#1f2937}
-.app{max-width:520px;margin:auto;min-height:100vh;background:#fff}
-.header{background:linear-gradient(135deg,#1769aa,#2196f3);color:#fff;padding:20px;border-radius:0 0 28px 28px}
-.back{display:inline-block;color:#fff;text-decoration:none;font-size:14px;margin-bottom:18px}
-.header h1{margin:0;font-size:21px;line-height:1.8}
-.content{padding:20px 16px 35px}
-details{background:#fff;border:1px solid #e5e7eb;border-radius:16px;margin-bottom:12px;box-shadow:0 3px 10px rgba(0,0,0,.04);overflow:hidden}
-summary{cursor:pointer;padding:18px;font-weight:bold;font-size:15px;line-height:1.8}
-.details-content{padding:0 18px 18px;font-size:13px;line-height:2.1;color:#374151}
-.info{background:#eef6ff;border-radius:12px;padding:12px;margin-top:12px}
-.footer{text-align:center;padding:10px 20px 25px;color:#9ca3af;font-size:11px}
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f3f6fa;
+    color:#1f2937;
+}
+
+.app{
+    max-width:520px;
+    margin:auto;
+    min-height:100vh;
+    background:#fff;
+}
+
+.header{
+    background:linear-gradient(135deg,#1769aa,#2196f3);
+    color:#fff;
+    padding:20px;
+    border-radius:0 0 28px 28px;
+}
+
+.back{
+    display:inline-block;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.header h1{
+    margin:0;
+    font-size:21px;
+    line-height:1.8;
+}
+
+.content{
+    padding:20px 16px 35px;
+}
+
+/* مسیر کلی */
+
+.roadmap{
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:18px;
+    padding:16px;
+    margin-bottom:20px;
+}
+
+.roadmap-title{
+    font-weight:bold;
+    font-size:15px;
+    margin-bottom:14px;
+}
+
+.road-step{
+    border-radius:14px;
+    padding:13px 14px;
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.stage1{
+    background:#eaf3ff;
+    color:#1769aa;
+}
+
+.stage2{
+    background:#eaf9f0;
+    color:#16834a;
+}
+
+.stage3{
+    background:#fff8df;
+    color:#9a7200;
+}
+
+.start{
+    background:#edf8ee;
+    color:#237b35;
+}
+
+.arrow{
+    text-align:center;
+    color:#9ca3af;
+    font-size:18px;
+    margin:-3px 0;
+}
+
+/* مراحل */
+
+.stage-box{
+    margin-bottom:24px;
+}
+
+.stage-header{
+    border-radius:17px;
+    padding:16px;
+    font-weight:bold;
+    font-size:16px;
+    margin-bottom:12px;
+}
+
+.stage-header.blue{
+    background:#eaf3ff;
+    color:#1769aa;
+}
+
+.stage-header.green{
+    background:#eaf9f0;
+    color:#16834a;
+}
+
+.stage-header.yellow{
+    background:#fff8df;
+    color:#9a7200;
+}
+
+details{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:16px;
+    margin-bottom:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.04);
+    overflow:hidden;
+}
+
+summary{
+    cursor:pointer;
+    padding:17px;
+    font-weight:bold;
+    font-size:14px;
+    line-height:1.8;
+}
+
+.details-content{
+    padding:0 18px 18px;
+    font-size:13px;
+    line-height:2.2;
+    color:#374151;
+}
+
+.details-content ol{
+    padding-right:20px;
+}
+
+.details-content li{
+    margin-bottom:7px;
+}
+
+.note{
+    background:#eef6ff;
+    border-radius:12px;
+    padding:12px;
+    margin-top:12px;
+}
+
+.important{
+    background:#fff4f4;
+    border-right:4px solid #dc2626;
+    border-radius:10px;
+    padding:12px;
+    margin-top:12px;
+    color:#991b1b;
+}
+
+.transition{
+    background:#f0fdf4;
+    border:1px solid #bbf7d0;
+    border-radius:14px;
+    padding:14px;
+    margin:15px 0;
+    color:#166534;
+    font-weight:bold;
+    line-height:2;
+}
+
+.final-box{
+    background:#edf8ee;
+    border:1px solid #bbf7d0;
+    border-radius:16px;
+    padding:17px;
+    text-align:center;
+    font-weight:bold;
+    color:#237b35;
+    margin-top:10px;
+}
+
+.footer{
+    text-align:center;
+    padding:10px 20px 25px;
+    color:#9ca3af;
+    font-size:11px;
+}
 </style>
 </head>
 
@@ -25,41 +213,310 @@ summary{cursor:pointer;padding:18px;font-weight:bold;font-size:15px;line-height:
 
 <div class="app">
 
+<!-- سربرگ -->
+
 <div class="header">
-<a class="back" href="index.html">→ بازگشت به صفحه اصلی</a>
-<h1>📖 تأسیس آموزشگاه</h1>
+
+<a class="back" href="index.html">
+→ بازگشت به صفحه اصلی
+</a>
+
+<h1>
+📖 مراحل تأسیس و راه‌اندازی آموزشگاه
+</h1>
+
 </div>
+
 
 <div class="content">
 
-<details>
-<summary>۱. آموزشگاه زبان‌های خارجی</summary>
-<div class="details-content">
-<p>
-مراحل تأسیس آموزشگاه زبان‌های خارجی در این بخش ارائه خواهد شد.
-</p>
-<div class="info">
-📌 اطلاعات و مدارک هر مرحله در نسخه تکمیل‌شده اضافه می‌شود.
+
+<!-- مسیر کلی -->
+
+<div class="roadmap">
+
+<div class="roadmap-title">
+🧭 مسیر کلی انجام مراحل
 </div>
+
+<div class="road-step stage1">
+🟦 مرحله ۱: تأسیس
 </div>
-</details>
+
+<div class="arrow">↓</div>
+
+<div class="road-step stage2">
+🟩 مرحله ۲: راه‌اندازی
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="road-step stage3">
+🟨 مرحله ۳: معرفی مدیر
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="road-step start">
+✅ شروع فعالیت
+</div>
+
+</div>
+
+
+<!-- مرحله اول -->
+
+<div class="stage-box">
+
+<div class="stage-header blue">
+🟦 مرحله ۱: تأسیس آموزشگاه
+</div>
+
 
 <details>
-<summary>۲. آموزشگاه علمی آزاد</summary>
+
+<summary>
+۱. ثبت‌نام در درگاه ملی مجوزها
+</summary>
+
 <div class="details-content">
+
 <p>
-مراحل تأسیس آموزشگاه علمی آزاد در این بخش ارائه خواهد شد.
+در این مرحله متقاضی باید درخواست تأسیس آموزشگاه را از طریق درگاه ملی مجوزها ثبت نماید.
 </p>
-<div class="info">
-📌 اطلاعات و مدارک هر مرحله در نسخه تکمیل‌شده اضافه می‌شود.
+
+<ol>
+
+<li>
+ورود به درگاه ملی مجوزها و ثبت درخواست تأسیس آموزشگاه.
+</li>
+
+<li>
+تکمیل اطلاعات و بارگذاری مدارک موردنیاز.
+</li>
+
+<li>
+دریافت و نگهداری کد درخواست.
+</li>
+
+</ol>
+
+<div class="note">
+📌 کد درخواست و اطلاعات ثبت‌شده را برای مراحل بعدی نزد خود نگه دارید.
 </div>
-</div>
-</details>
 
 </div>
+
+</details>
+
+
+<details>
+
+<summary>
+۲. تشکیل پرونده گزینش و حراست
+</summary>
+
+<div class="details-content">
+
+<p>
+پس از ثبت درخواست در درگاه ملی مجوزها، پرونده‌های مربوط به گزینش و حراست مطابق ضوابط مربوط تشکیل و تکمیل می‌شود.
+</p>
+
+<div class="important">
+⚠️ مدارک و فرم‌های موردنیاز این بخش باید مطابق آخرین دستورالعمل و اعلام واحد مربوط تکمیل شوند.
+</div>
+
+</div>
+
+</details>
+
+
+<details>
+
+<summary>
+۳. تشکیل پرونده شورای نظارت
+</summary>
+
+<div class="details-content">
+
+<p>
+پس از انجام مراحل مربوط به گزینش و حراست، پرونده برای ادامه فرآیند به شورای نظارت ارجاع می‌شود.
+</p>
+
+<div class="note">
+📌 جزئیات مدارک و مراحل این بخش پس از تکمیل اطلاعات به این قسمت اضافه خواهد شد.
+</div>
+
+</div>
+
+</details>
+
+
+<details>
+
+<summary>
+۴. تحویل پرونده به شعبه مشارکت‌های منطقه
+</summary>
+
+<div class="details-content">
+
+<p>
+پس از تکمیل مراحل تأسیس، پرونده برای ادامه فرآیند به شعبه مشارکت‌های مردمی آموزش و پرورش منطقه تحویل می‌شود.
+</p>
+
+<div class="note">
+📌 جزئیات مربوط به زمان، مدارک و نحوه تحویل پرونده مطابق فرآیند منطقه در این قسمت قرار می‌گیرد.
+</div>
+
+</div>
+
+</details>
+
+
+<div class="transition">
+
+✅ پس از تکمیل گام‌های ۱ تا ۴، وارد مرحله دوم شوید.
+
+</div>
+
+</div>
+
+
+
+<!-- مرحله دوم -->
+
+<div class="stage-box">
+
+<div class="stage-header green">
+🟩 مرحله ۲: راه‌اندازی آموزشگاه
+</div>
+
+
+<details>
+
+<summary>
+۱. معرفی مکان آموزشگاه
+</summary>
+
+<div class="details-content">
+
+<p>
+پس از اخذ مجوز تأسیس، متقاضی باید مکان موردنظر برای راه‌اندازی آموزشگاه را معرفی نماید.
+</p>
+
+<p>
+مکان معرفی‌شده جهت بررسی و انجام مراحل مربوط به تأیید فضا و ساختمان معرفی خواهد شد.
+</p>
+
+<div class="note">
+
+📁 مدارک موردنیاز این بخش، از جمله درخواست کتبی و مدارک مربوط به ساختمان، پس از تکمیل اطلاعات در این قسمت قرار می‌گیرد.
+
+</div>
+
+</div>
+
+</details>
+
+
+<details>
+
+<summary>
+۲. تکمیل مراحل مربوط به تأیید مکان
+</summary>
+
+<div class="details-content">
+
+<p>
+پس از معرفی مکان، مراحل بررسی و تأیید فضای آموزشگاه مطابق فرآیند مربوط انجام می‌شود.
+</p>
+
+<div class="note">
+
+📌 جزئیات مراحل بازدید، تأیید فضا و مدارک لازم در این قسمت تکمیل خواهد شد.
+
+</div>
+
+</div>
+
+</details>
+
+
+<div class="transition">
+
+✅ پس از تکمیل مراحل راه‌اندازی و تأیید مکان، وارد مرحله سوم شوید.
+
+</div>
+
+</div>
+
+
+
+<!-- مرحله سوم -->
+
+<div class="stage-box">
+
+<div class="stage-header yellow">
+🟨 مرحله ۳: معرفی مدیر
+</div>
+
+
+<details>
+
+<summary>
+👤 مراحل معرفی مدیر آموزشگاه
+</summary>
+
+<div class="details-content">
+
+<p>
+پس از طی مراحل تأسیس و راه‌اندازی، معرفی مدیر آموزشگاه انجام می‌شود.
+</p>
+
+<div class="note">
+
+📌 جزئیات مراحل معرفی مدیر، شرایط و مدارک موردنیاز پس از تکمیل اطلاعات در این قسمت قرار خواهد گرفت.
+
+</div>
+
+</div>
+
+</details>
+
+
+<details>
+
+<summary>
+📁 مدارک موردنیاز معرفی مدیر
+</summary>
+
+<div class="details-content">
+
+<p>
+فهرست مدارک موردنیاز معرفی مدیر آموزشگاه در این قسمت قرار خواهد گرفت.
+</p>
+
+</div>
+
+</details>
+
+
+<div class="final-box">
+
+🎉 پس از تکمیل مراحل تأسیس، راه‌اندازی و معرفی مدیر، آموزشگاه می‌تواند وارد مرحله شروع فعالیت شود.
+
+</div>
+
+</div>
+
+
+</div>
+
 
 <div class="footer">
+
 راهنمای مؤسسین مدارس و مراکز غیردولتی
+
 </div>
 
 </div>
