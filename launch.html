@@ -1,85 +1,653 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>راه‌اندازی مدرسه یا مرکز</title>
+
+<title>مراحل مدرسه غیردولتی</title>
 
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f3f6fa;color:#1f2937}
-.app{max-width:520px;margin:auto;min-height:100vh;background:#fff}
-.header{background:linear-gradient(135deg,#1769aa,#2196f3);color:#fff;padding:20px;border-radius:0 0 28px 28px}
-.back{display:inline-block;color:#fff;text-decoration:none;font-size:14px;margin-bottom:18px}
-.header h1{margin:0;font-size:21px;line-height:1.8}
-.content{padding:20px 16px 35px}
-details{background:#fff;border:1px solid #e5e7eb;border-radius:16px;margin-bottom:12px;box-shadow:0 3px 10px rgba(0,0,0,.04);overflow:hidden}
-summary{cursor:pointer;padding:18px;font-weight:bold;font-size:15px;line-height:1.8}
-.details-content{padding:0 18px 18px;font-size:13px;line-height:2.1;color:#374151}
-.info{background:#eef6ff;border-radius:12px;padding:12px;margin-top:12px}
-.footer{text-align:center;padding:10px 20px 25px;color:#9ca3af;font-size:11px}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f3f6fa;
+    color:#222;
+    line-height:1.9;
+}
+
+.app{
+    max-width:650px;
+    margin:auto;
+    min-height:100vh;
+    background:#fff;
+}
+
+.header{
+    background:linear-gradient(135deg,#1769aa,#2196f3);
+    color:#fff;
+    padding:20px;
+    border-radius:0 0 28px 28px;
+}
+
+.back{
+    display:inline-block;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.header h1{
+    margin:0;
+    font-size:21px;
+    line-height:1.8;
+}
+
+.container{
+    padding:18px 16px 35px;
+}
+
+details{
+    background:#fff;
+    border-radius:15px;
+    margin-bottom:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.06);
+    border:1px solid #e5e7eb;
+    overflow:hidden;
+}
+
+summary{
+    cursor:pointer;
+    padding:17px;
+    font-size:15px;
+    font-weight:bold;
+    color:#1769aa;
+    line-height:1.8;
+}
+
+.content{
+    padding:0 18px 18px;
+    border-top:1px solid #eee;
+    font-size:13px;
+}
+
+.content h3{
+    font-size:15px;
+    color:#333;
+    margin-top:18px;
+}
+
+.note{
+    background:#fff7df;
+    border-right:4px solid #e0a000;
+    padding:12px;
+    margin-top:12px;
+    border-radius:9px;
+}
+
+.important{
+    background:#ffe9e9;
+    border-right:4px solid #d33;
+    padding:12px;
+    margin-top:12px;
+    border-radius:9px;
+}
+
+.info{
+    background:#eef6ff;
+    border-right:4px solid #2196f3;
+    padding:12px;
+    margin-top:12px;
+    border-radius:9px;
+}
+
+ol{
+    padding-right:25px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.file-button{
+    display:block;
+    background:#eef6ff;
+    color:#1769aa;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+    margin-top:10px;
+    font-weight:bold;
+    border:1px solid #d7e9fa;
+}
+
+.footer{
+    text-align:center;
+    padding:10px 20px 25px;
+    color:#9ca3af;
+    font-size:11px;
+}
+
 </style>
+
 </head>
+
 
 <body>
 
+
 <div class="app">
 
+
 <div class="header">
-<a class="back" href="index.html">→ بازگشت به صفحه اصلی</a>
-<h1>🔧 راه‌اندازی مدرسه یا مرکز غیردولتی</h1>
+
+<a class="back" href="school.html">
+← بازگشت به مراحل مدرسه
+</a>
+
+<h1 id="pageTitle">
+</h1>
+
 </div>
+
+
+<div class="container" id="pageContent">
+</div>
+
+
+<div class="footer">
+
+راهنمای مؤسسین مدارس و مراکز غیردولتی
+
+</div>
+
+
+</div>
+
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const section = params.get("section");
+
+
+/* =========================
+   مرحله اول: تأسیس
+========================= */
+
+const establishmentContent = `
+
+<details open>
+
+<summary>
+۱️⃣ گام اول: ثبت‌نام در درگاه ملی مجوزها
+</summary>
 
 <div class="content">
 
-<details>
-<summary>۱. ثبت درخواست در سامانه ملی مجوزها</summary>
-<div class="details-content">
 <p>
-درخواست مربوط به راه‌اندازی از طریق سامانه ملی مجوزها ثبت می‌شود.
-</p>
-</div>
-</details>
-
-<details>
-<summary>۲. معرفی مکان به آموزش و پرورش</summary>
-<div class="details-content">
-
-<p>
-مکان موردنظر به آموزش و پرورش معرفی می‌شود تا نامه بازدید مهندسین مشاور به نوسازی ارسال شود.
+مراجعه به سامانه درگاه ملی مجوزها، ثبت درخواست
+و پرینت کد درخواست اخذ شده از سامانه.
 </p>
 
-<p><strong>مدارک لازم:</strong></p>
+<p>
+همچنین اخذ گواهی عدم سوءپیشینه کیفری از دفاتر
+خدمات قضایی و بارگذاری مدارک لازم.
+</p>
 
-<p>📄 درخواست کتبی</p>
+<div class="note">
 
-<p>📄 گواهی پایان کار یا پروانه ساخت</p>
-
-<p>📷 عکس نمای ساختمان</p>
+📌 پس از ثبت درخواست، به سایت
+<strong>mosharekatha.ir</strong>
+مراجعه کرده و با نام کاربری و رمز عبورتان وارد سایت شوید.
 
 </div>
+
+<h3>
+📋 پیگیری وضعیت مجوز
+</h3>
+
+<p>
+کارتابلی که به آن وارد شده‌اید متعلق به شماست
+و در سمت راست و بالای صفحه نام شما نوشته شده است.
+</p>
+
+<p>
+در پایین نام شما چند آیتم وجود دارد.
+بخش <strong>«مجوزها»</strong> را انتخاب کرده و
+وارد قسمت <strong>«مجوزهای تأسیس»</strong> شوید.
+</p>
+
+<p>
+از این قسمت می‌توانید اقدامات انجام‌شده در مورد
+مجوزتان را به‌صورت آنلاین پیگیری نمایید.
+</p>
+
+</div>
+
 </details>
+
 
 <details>
-<summary>۳. تشکیل پرونده شورای نظارت</summary>
-<div class="details-content">
-<p>
-پس از دریافت مجوز نوسازی، پرونده شورای نظارت تشکیل می‌شود.
-</p>
+
+<summary>
+۲️⃣ گام دوم: تشکیل پرونده گزینش و حراست
+</summary>
+
+<div class="content">
+
+<div class="note">
+
+👈 پس از ثبت درخواست در درگاه ملی مجوزها،
+حداکثر ظرف مدت یک هفته پرونده گزینش و حراست را
+به ترتیب زیر کامل کرده و به آموزش و پرورش تحویل دهید.
+
 </div>
+
+
+<div class="important">
+
+<strong>⚠️ توجه:</strong><br>
+
+پرونده گزینش ویژه نیروهای آزاد و بازنشسته
+آموزش و پرورش می‌باشد.
+
+<br><br>
+
+همکاران فرهنگی شاغل، نیاز به تشکیل پرونده گزینش ندارند.
+
+</div>
+
+
+<details>
+
+<summary>
+📁 مدارک لازم برای پرونده گزینش
+</summary>
+
+<div class="content">
+
+<ol>
+
+<li>پوشه سفید</li>
+
+<li>درخواست کتبی</li>
+
+<li>تکمیل فرم اطلاعات فردی در دو نسخه</li>
+
+<li>تصویر تمام صفحات شناسنامه برابر با اصل</li>
+
+<li>تصویر کارت ملی برابر با اصل</li>
+
+<li>تصویر پایان خدمت برابر با اصل</li>
+
+<li>تصویر آخرین مدرک تحصیلی برابر با اصل</li>
+
+<li>یک قطعه عکس ۴×۳</li>
+
+<li>گیره ۱ عدد</li>
+
+</ol>
+
+
+<div class="important">
+
+<strong>👈👈 نکات مهم</strong>
+
+<ol>
+
+<li>
+مدارک باید به ترتیب فوق در پوشه سفید قرار داده شود.
+</li>
+
+<li>
+مدارک باید در دفترخانه برابر با اصل گردند.
+</li>
+
+<li>
+دو عدد از عکس‌های مربوط به ردیف ۸ را
+در محل الصاق عکس فرم اطلاعات فردی بچسبانید.
+</li>
+
+<li>
+پس از اینکه پرونده گزینش و حراست را کامل نمودید،
+آن را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل دهید.
+</li>
+
+</ol>
+
+</div>
+
+<a href="files/form-gozinesh.pdf"
+target="_blank"
+class="file-button">
+
+📄 دریافت فرم اطلاعات فردی گزینش
+
+</a>
+
+</div>
+
 </details>
+
+
+<details>
+
+<summary>
+📁 مدارک لازم برای پرونده حراست
+</summary>
+
+<div class="content">
+
+<ol>
+
+<li>پوشه سبز</li>
+
+<li>
+پرینت کد درخواست از سامانه مشارکت‌ها
+و تحویل درخواست دستنویس
+(شامل مشخصات کامل متقاضی، نوع مدرسه یا مرکز،
+نوع جنسیت مدرسه یا مرکز، مقطع مدرسه)
+</li>
+
+<li>
+تصویر صفحه اول شناسنامه و تصویر پشت و روی کارت ملی در یک A4
+</li>
+
+<li>
+تکمیل فرم شرح مختصری از تاریخچه زندگی
+</li>
+
+<li>
+تصویر تمام صفحات شناسنامه و کارت ملی
+</li>
+
+<li>تصویر پایان خدمت</li>
+
+<li>تصویر سوءپیشینه</li>
+
+<li>
+فرم ۵۰۲
+(نیروهای شاغل رسمی آموزش و پرورش)
+</li>
+
+<li>
+تصویر حکم کارگزینی
+(نیروهای شاغل رسمی آموزش و پرورش)
+</li>
+
+<li>تصویر آخرین مدرک تحصیلی</li>
+
+<li>
+تصویر فیش واریز شده در هنگام ثبت‌نام
+در درگاه ملی مجوزها
+</li>
+
+<li>یک قطعه عکس ۴×۳</li>
+
+<li>گیره ۱ عدد</li>
+
+</ol>
+
+
+<div class="note">
+
+<strong>💳 نکته مهم درباره واریز وجه</strong>
+
+<p>
+واریز مبلغ مورد نظر حتماً باید از طریق بانک انجام گیرد.
+</p>
+
+</div>
+
+
+<div class="important">
+
+<strong>👈👈 نکات مهم</strong>
+
+<ol>
+
+<li>
+مدارک باید به ترتیب فوق در پوشه سبز قرار گیرد.
+</li>
+
+<li>
+فرم لازم برای ردیف ۴ در قسمت فرم‌ها قرار داده شده است.
+</li>
+
+<li>
+پس از اینکه پرونده حراست و گزینش را کامل نمودید،
+پوشه‌های سبز و سفید را سریعاً به واحد مشارکت‌های مردمی
+آموزش و پرورش مهاباد تحویل دهید.
+</li>
+
+<li>
+بعد از مراجعه و صدور معرفی‌نامه حراست از سوی شعبه مشارکت‌ها،
+متقاضی باید پوشه سبز را شخصاً تحویل واحد حراست دهد.
+</li>
+
+</ol>
+
+</div>
+
+
+<a href="files/form-herasat.pdf"
+target="_blank"
+class="file-button">
+
+📄 دریافت فرم شرح مختصری از تاریخچه زندگی
+
+</a>
+
+</div>
+
+</details>
+
+
+</div>
+
+</details>
+
+
+<details>
+
+<summary>
+۳️⃣ گام سوم: تشکیل پرونده شورای نظارت
+</summary>
+
+<div class="content">
+
+<p>
+پس از انجام مراحل مربوط به گزینش و حراست،
+پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
+</p>
+
+<div class="note">
+
+📌 جزئیات این مرحله در حال تکمیل است.
+
+</div>
+
+</div>
+
+</details>
+
+
+<details>
+
+<summary>
+۴️⃣ گام چهارم: تحویل پرونده به شعبه مشارکت‌های منطقه
+</summary>
+
+<div class="content">
+
+<h3>
+📅 زمان تحویل پرونده
+</h3>
+
+<p>
+تحویل پرونده به شعبه مشارکت‌های منطقه
+از <strong>۲۰م تا ۲۵م هر ماه</strong> انجام می‌شود.
+</p>
+
+<h3>
+📁 نحوه تحویل مدارک
+</h3>
+
+<p>
+پرونده فیزیکی را به شعبه مشارکت‌های منطقه تحویل دهید.
+</p>
+
+<p>
+همچنین اسکن رنگی اصل مدارک به همراه پاسخ استعلام‌های
+گزینش و حراست را به ترتیب مراحل، در قالب یک فایل PDF
+آماده نمایید.
+</p>
+
+<p>
+فایل PDF را از طریق ایتا برای کارشناس مربوطه ارسال نمایید.
+</p>
+
+<div class="important">
+
+⚠️ <strong>نکته مهم:</strong><br>
+
+فایل PDF باید به‌صورت یک فایل واحد،
+رنگی و شامل تمام مدارک به ترتیب مراحل باشد.
+
+</div>
+
+</div>
+
+</details>
+
+`;
+
+
+/* =========================
+   مرحله دوم: راه‌اندازی
+========================= */
+
+const launchContent = `
+
+<details open>
+
+<summary>
+۱️⃣ گام اول: معرفی مکان مدرسه
+</summary>
+
+<div class="content">
+
+<p>
+پس از دریافت مجوز تأسیس، مکان موردنظر برای راه‌اندازی
+مدرسه را به آموزش و پرورش معرفی نمایید.
+</p>
+
+</div>
+
+</details>
+
+
+<details>
+
+<summary>
+۲️⃣ گام دوم: بررسی مکان و معرفی به نوسازی
+</summary>
+
+<div class="content">
+
+<p>
+پس از معرفی مکان، موضوع برای بررسی و بازدید فنی
+پیگیری می‌شود.
+</p>
+
+<p>
+در صورت تأیید، معرفی‌نامه لازم برای مراجعه
+به واحد نوسازی صادر خواهد شد.
+</p>
+
+</div>
+
+</details>
+
+
+<details>
+
+<summary>
+📁 مدارک موردنیاز معرفی مکان
+</summary>
+
+<div class="content">
+
+<ol>
+
+<li>
+درخواست کتبی
+</li>
+
+<li>
+پایان کار یا پروانه ساخت
+</li>
+
+<li>
+عکس نمای ساختمان
+</li>
+
+</ol>
+
+</div>
+
+</details>
+
 
 <div class="info">
-📌 ادامه مراحل پس از تکمیل اطلاعات اضافه خواهد شد.
-</div>
+
+📌 این بخش پس از تکمیل اطلاعات اجرایی،
+جزئیات مراحل راه‌اندازی و مدارک هر مرحله
+تکمیل خواهد شد.
 
 </div>
 
-<div class="footer">
-راهنمای مؤسسین مدارس و مراکز غیردولتی
-</div>
+`;
 
-</div>
+
+/* =========================
+   نمایش صفحه
+========================= */
+
+const title = document.getElementById("pageTitle");
+
+const content = document.getElementById("pageContent");
+
+
+if(section === "launch"){
+
+    title.innerHTML =
+    "🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه";
+
+    content.innerHTML = launchContent;
+
+}
+
+else{
+
+    title.innerHTML =
+    "🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه";
+
+    content.innerHTML = establishmentContent;
+
+}
+
+</script>
+
 
 </body>
 </html>
