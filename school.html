@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مدرسه غیردولتی</title>
+
+<title>مراحل مدرسه غیردولتی</title>
 
 <style>
+
 *{
     box-sizing:border-box;
 }
@@ -24,16 +27,18 @@ body{
     background:#fff;
 }
 
+/* سربرگ */
+
 .header{
     background:linear-gradient(135deg,#1769aa,#2196f3);
-    color:#fff;
+    color:white;
     padding:20px;
     border-radius:0 0 28px 28px;
 }
 
 .back{
     display:inline-block;
-    color:#fff;
+    color:white;
     text-decoration:none;
     font-size:14px;
     margin-bottom:18px;
@@ -45,27 +50,56 @@ body{
     line-height:1.8;
 }
 
+/* محتوای اصلی */
+
 .content{
-    padding:20px 16px 35px;
+    padding:22px 16px 35px;
 }
+
+/* کارت مراحل */
 
 .stage{
     display:block;
     text-decoration:none;
     color:#1f2937;
+
     border-radius:16px;
-    padding:18px;
-    margin:10px 0;
+
+    padding:20px 18px;
+
+    margin:12px 0;
+
     font-weight:bold;
+
     line-height:1.9;
+
     border:1px solid #e5e7eb;
+
     box-shadow:0 3px 10px rgba(0,0,0,.04);
+
+    transition:transform .15s;
 }
 
-.stage small{
+.stage:active{
+    transform:scale(.98);
+}
+
+.stage-title{
+    font-size:15px;
+}
+
+.stage-description{
+    display:block;
+    margin-top:5px;
+
+    font-size:12px;
+
     font-weight:normal;
+
     color:#6b7280;
 }
+
+/* رنگ مراحل */
 
 .s1{
     background:#eaf4ff;
@@ -79,46 +113,63 @@ body{
     background:#fff9e8;
 }
 
-.arrow{
-    text-align:center;
-    color:#9ca3af;
-    font-size:20px;
-    margin:2px 0;
-}
+/* شروع فعالیت */
 
 .start{
     background:#ecfdf5;
+
     border:1px solid #bbf7d0;
+
     border-radius:16px;
-    padding:16px;
+
+    padding:17px;
+
     text-align:center;
-    margin-top:20px;
+
+    margin-top:24px;
+
     font-weight:bold;
+
     line-height:2;
 }
 
 .start small{
+    display:block;
+
+    font-size:12px;
+
     font-weight:normal;
+
     color:#6b7280;
 }
 
+/* پایین صفحه */
+
 .footer{
     text-align:center;
+
     padding:10px 20px 25px;
+
     color:#9ca3af;
+
     font-size:11px;
 }
+
 </style>
 </head>
+
 
 <body>
 
 <div class="app">
 
+
+    <!-- سربرگ -->
+
     <div class="header">
 
         <a class="back" href="index.html">
-            → بازگشت به صفحه اصلی
+            ← بازگشت به صفحه اصلی
         </a>
 
         <h1>
@@ -128,59 +179,55 @@ body{
     </div>
 
 
+    <!-- فقط سه مرحله -->
+
     <div class="content">
 
-        <!-- مرحله اول -->
 
-        <a class="stage s1" href="school-establishment.html">
+        <!-- مرحله ۱ -->
 
-            🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه
+        <a href="school-establishment.html"
+           class="stage s1">
 
-            <br>
+            <span class="stage-title">
+                🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه
+            </span>
 
-            <small>
+            <span class="stage-description">
                 ورود به گام‌های دریافت مجوز تأسیس
-            </small>
+            </span>
 
         </a>
 
 
-        <div class="arrow">
-            ↓
-        </div>
+        <!-- مرحله ۲ -->
 
+        <a href="school-launch.html"
+           class="stage s2">
 
-        <!-- مرحله دوم -->
+            <span class="stage-title">
+                🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه
+            </span>
 
-        <a class="stage s2" href="school-launch.html">
-
-            🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه
-
-            <br>
-
-            <small>
+            <span class="stage-description">
                 ورود به گام‌های دریافت مجوز راه‌اندازی
-            </small>
+            </span>
 
         </a>
 
 
-        <div class="arrow">
-            ↓
-        </div>
+        <!-- مرحله ۳ -->
 
+        <a href="school-manager.html"
+           class="stage s3">
 
-        <!-- مرحله سوم -->
+            <span class="stage-title">
+                🟨 مرحله ۳: معرفی مدیر مدرسه
+            </span>
 
-        <a class="stage s3" href="school-manager.html">
-
-            🟨 مرحله ۳: معرفی مدیر مدرسه
-
-            <br>
-
-            <small>
+            <span class="stage-description">
                 ورود به مراحل و مدارک معرفی مدیر
-            </small>
+            </span>
 
         </a>
 
@@ -191,16 +238,17 @@ body{
 
             ✅ شروع فعالیت مدرسه
 
-            <br>
-
             <small>
                 پس از تکمیل سه مرحله فوق
             </small>
 
         </div>
 
+
     </div>
 
+
+    <!-- پاورقی -->
 
     <div class="footer">
 
@@ -208,7 +256,9 @@ body{
 
     </div>
 
+
 </div>
 
 </body>
+
 </html>
