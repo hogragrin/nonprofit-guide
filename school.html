@@ -1,241 +1,159 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>مدرسه غیردولتی</title>
+<title>مراحل مدرسه غیردولتی</title>
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
 
-*{
-    box-sizing:border-box;
-}
+    body {
+        margin: 0;
+        font-family: Tahoma, Arial, sans-serif;
+        background: #f4f7fb;
+        color: #222;
+    }
 
-body{
-    margin:0;
-    font-family:Tahoma,Arial,sans-serif;
-    background:#f3f6fa;
-    color:#1f2937;
-}
+    .header {
+        background: #1976d2;
+        color: white;
+        padding: 22px 15px;
+        text-align: center;
+    }
 
-.app{
-    max-width:520px;
-    margin:auto;
-    min-height:100vh;
-    background:#fff;
-}
+    .header h1 {
+        margin: 0;
+        font-size: 22px;
+    }
 
-.header{
-    background:linear-gradient(135deg,#1769aa,#2196f3);
-    color:#fff;
-    padding:20px;
-    border-radius:0 0 28px 28px;
-}
+    .container {
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 0 15px;
+    }
 
-.back{
-    display:inline-block;
-    color:#fff;
-    text-decoration:none;
-    font-size:14px;
-    margin-bottom:18px;
-}
+    .back {
+        display: inline-block;
+        text-decoration: none;
+        background: #eeeeee;
+        color: #333;
+        padding: 10px 16px;
+        border-radius: 10px;
+        margin-bottom: 18px;
+        font-size: 14px;
+    }
 
-.header h1{
-    margin:0;
-    font-size:21px;
-    line-height:1.8;
-}
+    .intro {
+        background: white;
+        border-radius: 14px;
+        padding: 18px;
+        margin-bottom: 18px;
+        line-height: 2;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
 
-.content{
-    padding:20px 16px 35px;
-}
+    .stage {
+        display: block;
+        text-decoration: none;
+        color: #222;
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 15px 0;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        transition: 0.2s;
+    }
 
-.stage{
-    display:block;
-    text-decoration:none;
-    color:#1f2937;
+    .stage:hover {
+        transform: translateY(-2px);
+    }
 
-    border-radius:16px;
+    .stage-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
-    padding:19px 18px;
+    .stage-text {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.9;
+    }
 
-    margin:12px 0;
+    .blue {
+        border-right: 7px solid #2196f3;
+    }
 
-    font-weight:bold;
+    .green {
+        border-right: 7px solid #4caf50;
+    }
 
-    line-height:1.9;
+    .yellow {
+        border-right: 7px solid #fbc02d;
+    }
 
-    border:1px solid #e5e7eb;
-
-    box-shadow:0 3px 10px rgba(0,0,0,.04);
-
-    transition:transform .15s;
-}
-
-.stage:active{
-    transform:scale(.98);
-}
-
-.stage-title{
-    font-size:15px;
-}
-
-.stage-description{
-    display:block;
-    margin-top:5px;
-    font-size:12px;
-    font-weight:normal;
-    color:#6b7280;
-}
-
-.s1{
-    background:#eaf4ff;
-}
-
-.s2{
-    background:#edf9f0;
-}
-
-.s3{
-    background:#fff9e8;
-}
-
-.start{
-    background:#ecfdf5;
-
-    border:1px solid #bbf7d0;
-
-    border-radius:16px;
-
-    padding:17px;
-
-    text-align:center;
-
-    margin-top:24px;
-
-    font-weight:bold;
-
-    line-height:2;
-}
-
-.start small{
-    display:block;
-
-    font-size:12px;
-
-    font-weight:normal;
-
-    color:#6b7280;
-}
-
-.footer{
-    text-align:center;
-
-    padding:10px 20px 25px;
-
-    color:#9ca3af;
-
-    font-size:11px;
-}
-
+    .footer {
+        text-align: center;
+        color: #888;
+        font-size: 12px;
+        padding: 25px 10px;
+    }
 </style>
 </head>
 
-
 <body>
 
-<div class="app">
+<div class="header">
+    <h1>🏫 مدرسه غیردولتی</h1>
+</div>
 
+<div class="container">
 
-    <div class="header">
+    <a href="index.html" class="back">⬅ بازگشت به صفحه اصلی</a>
 
-        <a class="back" href="index.html">
-            ← بازگشت به صفحه اصلی
-        </a>
-
-        <h1>
-            🏫 مراحل تأسیس و راه‌اندازی مدرسه غیردولتی
-        </h1>
-
+    <div class="intro">
+        <strong>مراحل تأسیس و راه‌اندازی مدرسه غیردولتی</strong>
+        <br>
+        مراحل کار در سه مرحله اصلی تنظیم شده است. برای مشاهده جزئیات هر مرحله، روی آن کلیک کنید.
     </div>
 
-
-    <div class="content">
-
-
-        <!-- مرحله ۱ -->
-
-        <a href="launch.html?section=establishment"
-           class="stage s1">
-
-            <span class="stage-title">
-                🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه
-            </span>
-
-            <span class="stage-description">
-                ورود به گام‌های دریافت مجوز تأسیس
-            </span>
-
-        </a>
-
-
-        <!-- مرحله ۲ -->
-
-        <a href="launch.html?section=launch"
-           class="stage s2">
-
-            <span class="stage-title">
-                🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه
-            </span>
-
-            <span class="stage-description">
-                ورود به گام‌های دریافت مجوز راه‌اندازی
-            </span>
-
-        </a>
-
-
-        <!-- مرحله ۳ -->
-
-        <a href="manager.html"
-           class="stage s3">
-
-            <span class="stage-title">
-                🟨 مرحله ۳: معرفی مدیر مدرسه
-            </span>
-
-            <span class="stage-description">
-                ورود به مراحل و مدارک معرفی مدیر
-            </span>
-
-        </a>
-
-
-        <!-- شروع فعالیت -->
-
-        <div class="start">
-
-            ✅ شروع فعالیت مدرسه
-
-            <small>
-                پس از تکمیل سه مرحله فوق
-            </small>
-
+    <!-- مرحله اول -->
+    <a href="launch.html#establishment" class="stage blue">
+        <div class="stage-title">
+            🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه
         </div>
+        <div class="stage-text">
+            مراحل و مدارک مورد نیاز برای دریافت مجوز تأسیس مدرسه غیردولتی
+        </div>
+    </a>
 
+    <!-- مرحله دوم -->
+    <a href="launch.html#launch" class="stage green">
+        <div class="stage-title">
+            🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه
+        </div>
+        <div class="stage-text">
+            مراحل مربوط به معرفی مکان و انجام فرآیند دریافت مجوز راه‌اندازی
+        </div>
+    </a>
 
-    </div>
+    <!-- مرحله سوم -->
+    <a href="manager.html" class="stage yellow">
+        <div class="stage-title">
+            🟨 مرحله ۳: معرفی مدیر مدرسه
+        </div>
+        <div class="stage-text">
+            مراحل و اطلاعات مربوط به معرفی مدیر مدرسه
+        </div>
+    </a>
 
+</div>
 
-    <div class="footer">
-
-        راهنمای مؤسسین مدارس و مراکز غیردولتی
-
-    </div>
-
-
+<div class="footer">
+    نسخه اولیه راهنمای مؤسسین
 </div>
 
 </body>
