@@ -3,14 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>مراحل تأسیس و راه‌اندازی مدرسه</title>
+<title>مدرسه غیردولتی</title>
 
 <style>
-*{box-sizing:border-box}
-
-html{
-    scroll-behavior:smooth;
+*{
+    box-sizing:border-box;
 }
 
 body{
@@ -52,206 +49,57 @@ body{
     padding:20px 16px 35px;
 }
 
-/* مسیر کلی */
-
-.roadmap{
-    background:#f8fafc;
+.stage{
+    display:block;
+    text-decoration:none;
+    color:#1f2937;
+    border-radius:16px;
+    padding:18px;
+    margin:10px 0;
+    font-weight:bold;
+    line-height:1.9;
     border:1px solid #e5e7eb;
-    border-radius:18px;
-    padding:16px;
-    margin-bottom:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.04);
 }
 
-.roadmap-title{
-    font-weight:bold;
-    font-size:15px;
-    margin-bottom:14px;
+.stage small{
+    font-weight:normal;
+    color:#6b7280;
 }
 
-.road-step{
-    border-radius:14px;
-    padding:13px 14px;
-    margin-bottom:8px;
-    font-size:14px;
-    font-weight:bold;
+.s1{
+    background:#eaf4ff;
 }
 
-.stage1{
-    background:#eaf3ff;
-    color:#1769aa;
+.s2{
+    background:#edf9f0;
 }
 
-.stage2{
-    background:#eaf9f0;
-    color:#16834a;
-}
-
-.stage3{
-    background:#fff8df;
-    color:#9a7200;
-}
-
-.start{
-    background:#edf8ee;
-    color:#237b35;
+.s3{
+    background:#fff9e8;
 }
 
 .arrow{
     text-align:center;
     color:#9ca3af;
-    font-size:18px;
-    margin:-3px 0;
+    font-size:20px;
+    margin:2px 0;
 }
 
-/* مراحل */
-
-.stage-box{
-    margin-bottom:24px;
-    scroll-margin-top:15px;
-}
-
-.stage-header{
-    border-radius:17px;
-    padding:16px;
-    font-weight:bold;
-    font-size:16px;
-    margin-bottom:12px;
-}
-
-.stage-header.blue{
-    background:#eaf3ff;
-    color:#1769aa;
-}
-
-.stage-header.green{
-    background:#eaf9f0;
-    color:#16834a;
-}
-
-.stage-header.yellow{
-    background:#fff8df;
-    color:#9a7200;
-}
-
-details{
-    background:#fff;
-    border:1px solid #e5e7eb;
-    border-radius:16px;
-    margin-bottom:10px;
-    box-shadow:0 3px 10px rgba(0,0,0,.04);
-    overflow:hidden;
-}
-
-summary{
-    cursor:pointer;
-    padding:17px;
-    font-weight:bold;
-    font-size:14px;
-    line-height:1.8;
-}
-
-.details-content{
-    padding:0 18px 18px;
-    font-size:13px;
-    line-height:2.2;
-    color:#374151;
-}
-
-.details-content ol{
-    padding-right:20px;
-}
-
-.details-content li{
-    margin-bottom:7px;
-}
-
-.note{
-    background:#eef6ff;
-    border-radius:12px;
-    padding:12px;
-    margin-top:12px;
-}
-
-.important{
-    background:#fff4f4;
-    border-right:4px solid #dc2626;
-    border-radius:10px;
-    padding:12px;
-    margin-top:12px;
-    color:#991b1b;
-}
-
-.transition{
-    background:#f0fdf4;
+.start{
+    background:#ecfdf5;
     border:1px solid #bbf7d0;
-    border-radius:14px;
-    padding:14px;
-    margin:15px 0;
-    color:#166534;
+    border-radius:16px;
+    padding:16px;
+    text-align:center;
+    margin-top:20px;
     font-weight:bold;
     line-height:2;
 }
 
-/* دکمه فایل */
-
-.file-button{
-    display:block;
-    text-decoration:none;
-    background:#1769aa;
-    color:#fff;
-    text-align:center;
-    border-radius:12px;
-    padding:11px;
-    margin-top:12px;
-    font-size:13px;
-}
-
-/* دکمه های پایین */
-
-.path-buttons{
-    margin-top:25px;
-}
-
-.path-button{
-    display:block;
-    text-decoration:none;
-    padding:15px;
-    border-radius:15px;
-    margin-bottom:10px;
-    text-align:center;
-    font-weight:bold;
-    font-size:14px;
-}
-
-.path-button.blue{
-    background:#eaf3ff;
-    color:#1769aa;
-}
-
-.path-button.green{
-    background:#eaf9f0;
-    color:#16834a;
-}
-
-.path-button.yellow{
-    background:#fff8df;
-    color:#9a7200;
-}
-
-.path-button.start{
-    background:#edf8ee;
-    color:#237b35;
-}
-
-.final-box{
-    background:#edf8ee;
-    border:1px solid #bbf7d0;
-    border-radius:16px;
-    padding:17px;
-    text-align:center;
-    font-weight:bold;
-    color:#237b35;
-    margin-top:10px;
+.start small{
+    font-weight:normal;
+    color:#6b7280;
 }
 
 .footer{
@@ -267,555 +115,98 @@ summary{
 
 <div class="app">
 
-<!-- سربرگ -->
+    <div class="header">
 
-<div class="header">
+        <a class="back" href="index.html">
+            → بازگشت به صفحه اصلی
+        </a>
 
-<a class="back" href="index.html">
-→ بازگشت به صفحه اصلی
-</a>
+        <h1>
+            🏫 مراحل تأسیس و راه‌اندازی مدرسه غیردولتی
+        </h1>
 
-<h1>
-🏫 مراحل تأسیس و راه‌اندازی مدرسه غیردولتی
-</h1>
+    </div>
 
-</div>
 
+    <div class="content">
 
-<div class="content">
+        <!-- مرحله اول -->
 
+        <a class="stage s1" href="school-establishment.html">
 
-<!-- مسیر کلی -->
+            🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه
 
-<div class="roadmap">
+            <br>
 
-<div class="roadmap-title">
-🧭 مسیر کلی انجام مراحل
-</div>
+            <small>
+                ورود به گام‌های دریافت مجوز تأسیس
+            </small>
 
-<div class="road-step stage1">
-🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه
-</div>
+        </a>
 
-<div class="arrow">↓</div>
 
-<div class="road-step stage2">
-🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه
-</div>
+        <div class="arrow">
+            ↓
+        </div>
 
-<div class="arrow">↓</div>
 
-<div class="road-step stage3">
-🟨 مرحله ۳: معرفی مدیر مدرسه
-</div>
+        <!-- مرحله دوم -->
 
-<div class="arrow">↓</div>
+        <a class="stage s2" href="school-launch.html">
 
-<div class="road-step start">
-✅ شروع فعالیت مدرسه
-</div>
+            🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه
 
-</div>
+            <br>
 
+            <small>
+                ورود به گام‌های دریافت مجوز راه‌اندازی
+            </small>
 
-<!-- ========================= -->
-<!-- مرحله اول: تأسیس -->
-<!-- ========================= -->
+        </a>
 
-<div class="stage-box" id="stage1">
 
-<div class="stage-header blue">
-🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه
-</div>
+        <div class="arrow">
+            ↓
+        </div>
 
 
-<!-- گام ۱ -->
+        <!-- مرحله سوم -->
 
-<details>
+        <a class="stage s3" href="school-manager.html">
 
-<summary>
-۱. ثبت‌نام در درگاه ملی مجوزها
-</summary>
+            🟨 مرحله ۳: معرفی مدیر مدرسه
 
-<div class="details-content">
+            <br>
 
-<p>
-مراجعه به سامانه درگاه ملی مجوزها، ثبت درخواست و پرینت کد درخواست اخذ شده از سامانه.
-</p>
+            <small>
+                ورود به مراحل و مدارک معرفی مدیر
+            </small>
 
-<p>
-اخذ گواهی عدم سوءپیشینه کیفری از دفاتر خدمات قضایی و بارگذاری مدارک لازم.
-</p>
+        </a>
 
-<p>
-پس از ثبت درخواست، مراجعه به سامانه مشارکت‌ها به نشانی:
-</p>
 
-<p>
-<strong>mosharekatha.ir</strong>
-</p>
+        <!-- شروع فعالیت -->
 
-<p>
-ورود با نام کاربری و رمز عبور انجام می‌شود.
-</p>
+        <div class="start">
 
-<p>
-کارتابل مربوط به متقاضی بوده و نام متقاضی در قسمت بالای سمت راست صفحه نمایش داده می‌شود.
-</p>
+            ✅ شروع فعالیت مدرسه
 
-<p>
-سپس از قسمت «مجوزها» گزینه «مجوزهای تأسیس» انتخاب شود تا روند درخواست به صورت آنلاین پیگیری گردد.
-</p>
+            <br>
 
-<div class="note">
-📌 کد درخواست و اطلاعات ثبت‌شده را برای مراحل بعدی نزد خود نگه دارید.
-</div>
+            <small>
+                پس از تکمیل سه مرحله فوق
+            </small>
 
-</div>
+        </div>
 
-</details>
+    </div>
 
 
-<!-- گام ۲ -->
+    <div class="footer">
 
-<details>
+        راهنمای مؤسسین مدارس و مراکز غیردولتی
 
-<summary>
-۲. تشکیل پرونده گزینش و حراست
-</summary>
-
-<div class="details-content">
-
-<div class="important">
-
-⚠️ پس از ثبت درخواست در درگاه ملی مجوزها، حداکثر ظرف مدت یک هفته پرونده گزینش و حراست را به ترتیب زیر کامل کرده و به آموزش و پرورش تحویل دهید.
-
-</div>
-
-<div class="important">
-
-⚠️ پرونده گزینش ویژه نیروهای آزاد و بازنشسته آموزش و پرورش می‌باشد. همکاران فرهنگی شاغل، نیاز به تشکیل پرونده گزینش ندارند.
-
-</div>
-
-
-<!-- پرونده گزینش -->
-
-<details>
-
-<summary>
-📁 مدارک لازم برای پرونده گزینش
-</summary>
-
-<div class="details-content">
-
-<ol>
-
-<li>پوشه سفید</li>
-
-<li>درخواست کتبی</li>
-
-<li>تکمیل فرم اطلاعات فردی در دو نسخه</li>
-
-<li>تصویر تمام صفحات شناسنامه برابر با اصل</li>
-
-<li>تصویر کارت ملی برابر با اصل</li>
-
-<li>تصویر پایان خدمت برابر با اصل</li>
-
-<li>تصویر آخرین مدرک تحصیلی برابر با اصل</li>
-
-<li>یک قطعه عکس ۴×۳</li>
-
-<li>گیره ۱ عدد</li>
-
-</ol>
-
-
-<div class="note">
-
-<strong>نکات مهم:</strong>
-
-<br>
-
-۱. مدارک باید به ترتیب فوق در پوشه سفید قرار داده شود، در غیر این صورت از تحویل گرفتن پرونده معذوریم.
-
-<br>
-
-۲. مدارک باید در دفترخانه برابر با اصل گردند.
-
-<br>
-
-۳. دو عدد از عکس‌های مربوط به ردیف ۸ را در محل الصاق عکس فرم اطلاعات فردی بچسبانید.
-
-<br>
-
-۴. پس از اینکه پرونده گزینش و حراست را کامل نمودید، آن را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل دهید.
-
-</div>
-
-
-<a class="file-button"
-href="files/form-gozinesh.pdf"
-target="_blank">
-📄 دریافت فرم اطلاعات فردی گزینش
-</a>
-
-</div>
-
-</details>
-
-
-<!-- پرونده حراست -->
-
-<details>
-
-<summary>
-📁 مدارک لازم برای پرونده حراست
-</summary>
-
-<div class="details-content">
-
-<ol>
-
-<li>پوشه سبز</li>
-
-<li>
-پرینت کد درخواست از سامانه مشارکت‌ها و تحویل درخواست دستنویس (مشخصات کامل متقاضی، نوع مدرسه/مرکز، نوع جنسیت، مقطع مدرسه)
-</li>
-
-<li>
-تصویر صفحه اول شناسنامه و تصویر پشت و روی کارت ملی در یک A4
-</li>
-
-<li>
-تکمیل فرم شرح مختصری از تاریخچه زندگی
-</li>
-
-<li>
-تصویر تمام صفحات شناسنامه و کارت ملی
-</li>
-
-<li>
-تصویر پایان خدمت
-</li>
-
-<li>
-تصویر سوءپیشینه
-</li>
-
-<li>
-فرم ۵۰۲ (نیروهای شاغل رسمی آموزش و پرورش)
-</li>
-
-<li>
-تصویر حکم کارگزینی (نیروهای شاغل رسمی آموزش و پرورش)
-</li>
-
-<li>
-تصویر آخرین مدرک تحصیلی
-</li>
-
-<li>
-تصویر فیش واریز شده در هنگام ثبت‌نام در درگاه ملی مجوزها (مربوط به گام اول)
-</li>
-
-<li>
-یک قطعه عکس ۴×۳
-</li>
-
-<li>
-گیره ۱ عدد
-</li>
-
-</ol>
-
-
-<div class="important">
-
-⚠️ واریز مبلغ مورد نظر حتماً باید از طریق بانک انجام گیرد.
-
-</div>
-
-
-<div class="note">
-
-<strong>نکات مهم:</strong>
-
-<br>
-
-۱. مدارک به ترتیب فوق در پوشه سبز قرار گیرد.
-
-<br>
-
-۲. فرم لازم برای ردیف ۴ بعد از پیام قرار داده شده است.
-
-<br>
-
-۳. پس از تکمیل پرونده حراست و گزینش، پوشه‌های سبز و سفید را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل دهید.
-
-<br>
-
-۴. بعد از مراجعه و صدور معرفی‌نامه حراست از سوی شعبه مشارکت‌ها، متقاضی باید پوشه سبز را شخصاً تحویل واحد حراست دهد.
-
-</div>
-
-
-<a class="file-button"
-href="files/form-herasat.pdf"
-target="_blank">
-📄 دریافت فرم شرح مختصری از تاریخچه زندگی
-</a>
-
-</div>
-
-</details>
-
-</div>
-
-
-<!-- گام ۳ -->
-
-<details>
-
-<summary>
-۳. تشکیل پرونده شورای نظارت
-</summary>
-
-<div class="details-content">
-
-<p>
-پس از انجام مراحل مربوط به گزینش و حراست، پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
-</p>
-
-<div class="note">
-
-📌 جزئیات مراحل و مدارک این بخش در حال تکمیل است.
-
-</div>
-
-</div>
-
-</details>
-
-
-<!-- گام ۴ -->
-
-<details>
-
-<summary>
-۴. تحویل پرونده به شعبه مشارکت‌های منطقه
-</summary>
-
-<div class="details-content">
-
-<p>
-پرونده در بازه زمانی <strong>۲۰ تا ۲۵ هر ماه</strong> به شعبه مشارکت‌های مردمی منطقه تحویل داده شود.
-</p>
-
-<p>
-پرونده فیزیکی به شعبه مشارکت‌های مردمی منطقه تحویل گردد.
-</p>
-
-<p>
-اصل مدارک به صورت اسکن رنگی، به همراه پاسخ استعلام‌های حراست و گزینش، به ترتیب و پشت سر هم در قالب <strong>یک فایل PDF</strong> تهیه شود.
-</p>
-
-<p>
-فایل PDF تهیه‌شده از طریق ایتا برای کارشناس مربوطه ارسال گردد.
-</p>
-
-<div class="important">
-
-⚠️ فایل PDF باید فقط <strong>یک فایل</strong> و به صورت <strong>رنگی و پشت سر هم</strong> باشد.
-
-</div>
-
-</div>
-
-</details>
-
-
-<div class="transition">
-
-✅ پس از تکمیل گام‌های ۱ تا ۴، وارد مرحله دوم شوید.
-
-</div>
-
-</div>
-
-
-<!-- ========================= -->
-<!-- مرحله دوم: راه اندازی -->
-<!-- ========================= -->
-
-<div class="stage-box" id="stage2">
-
-<div class="stage-header green">
-🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه
-</div>
-
-
-<details>
-
-<summary>
-۱. معرفی مکان مدرسه
-</summary>
-
-<div class="details-content">
-
-<p>
-پس از دریافت مجوز تأسیس، متقاضی باید مکان موردنظر برای راه‌اندازی مدرسه را به آموزش و پرورش معرفی نماید.
-</p>
-
-<div class="note">
-
-📁 مدارک موردنیاز:
-
-<br><br>
-
-۱. درخواست کتبی
-
-<br>
-
-۲. پایان کار / پروانه ساخت
-
-<br>
-
-۳. عکس نمای ساختمان
-
-</div>
-
-</div>
-
-</details>
-
-
-<details>
-
-<summary>
-۲. بررسی و تأیید مکان مدرسه
-</summary>
-
-<div class="details-content">
-
-<p>
-مکان معرفی‌شده برای انجام مراحل مربوط به بررسی و تأیید ساختمان مورد ارزیابی قرار می‌گیرد.
-</p>
-
-<div class="note">
-
-📌 جزئیات مراحل بازدید و تأیید مکان مطابق فرآیند مربوط تکمیل خواهد شد.
-
-</div>
-
-</div>
-
-</details>
-
-
-<div class="transition">
-
-✅ پس از تکمیل مراحل دریافت مجوز راه‌اندازی، وارد مرحله سوم شوید.
-
-</div>
-
-</div>
-
-
-<!-- ========================= -->
-<!-- مرحله سوم: مدیر -->
-<!-- ========================= -->
-
-<div class="stage-box" id="stage3">
-
-<div class="stage-header yellow">
-🟨 مرحله ۳: معرفی مدیر مدرسه
-</div>
-
-
-<details>
-
-<summary>
-👤 مراحل معرفی مدیر مدرسه
-</summary>
-
-<div class="details-content">
-
-<p>
-پس از طی مراحل دریافت مجوز تأسیس و دریافت مجوز راه‌اندازی، معرفی مدیر مدرسه انجام می‌شود.
-</p>
-
-<div class="note">
-
-📌 جزئیات مراحل معرفی مدیر و مدارک موردنیاز پس از تکمیل اطلاعات در این قسمت قرار خواهد گرفت.
-
-</div>
-
-</div>
-
-</details>
-
-
-<details>
-
-<summary>
-📁 مدارک موردنیاز معرفی مدیر
-</summary>
-
-<div class="details-content">
-
-<p>
-فهرست مدارک موردنیاز معرفی مدیر مدرسه در این قسمت قرار خواهد گرفت.
-</p>
-
-</div>
-
-</details>
-
-
-<div class="final-box" id="start">
-
-🎉 پس از دریافت مجوز تأسیس، دریافت مجوز راه‌اندازی و معرفی مدیر، مدرسه وارد مرحله شروع فعالیت می‌شود.
-
-</div>
-
-</div>
-
-
-<!-- ========================= -->
-<!-- دکمه های پایین صفحه -->
-<!-- ========================= -->
-
-<div class="path-buttons">
-
-<a class="path-button blue" href="#stage1">
-🟦 دریافت مجوز تأسیس مدرسه
-</a>
-
-<a class="path-button green" href="#stage2">
-🟩 دریافت مجوز راه‌اندازی مدرسه
-</a>
-
-<a class="path-button yellow" href="#stage3">
-🟨 معرفی مدیر مدرسه
-</a>
-
-<a class="path-button start" href="#start">
-✅ شروع فعالیت مدرسه
-</a>
-
-</div>
-
-
-</div>
-
-
-<div class="footer">
-
-راهنمای مؤسسین مدارس و مراکز غیردولتی
-
-</div>
+    </div>
 
 </div>
 
