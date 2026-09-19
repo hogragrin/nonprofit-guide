@@ -4,637 +4,596 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>راهنمای مدرسه غیردولتی</title>
+<title>مراحل دریافت مجوز</title>
 
 <style>
-* {
-    box-sizing: border-box;
+body{
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f4f7fb;
+    color:#222;
 }
-
-body {
-    margin: 0;
-    font-family: Tahoma, Arial, sans-serif;
-    background: #f4f7fb;
-    color: #222;
+header{
+    background:#1565c0;
+    color:white;
+    padding:25px 15px;
+    text-align:center;
 }
-
-.header {
-    background: #1976d2;
-    color: white;
-    text-align: center;
-    padding: 22px 15px;
+header h1{
+    margin:0;
+    font-size:24px;
 }
-
-.header h1 {
-    margin: 0;
-    font-size: 21px;
+.container{
+    max-width:850px;
+    margin:25px auto;
+    padding:0 15px;
 }
-
-.container {
-    max-width: 750px;
-    margin: 20px auto;
-    padding: 0 15px;
+.back{
+    display:inline-block;
+    background:white;
+    color:#1565c0;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:10px;
+    margin-bottom:18px;
 }
-
-.back {
-    display: inline-block;
-    text-decoration: none;
-    background: #eeeeee;
-    color: #333;
-    padding: 10px 16px;
-    border-radius: 10px;
-    margin-bottom: 18px;
-    font-size: 14px;
+.page{
+    display:none;
 }
-
-.title-box {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 18px;
-    line-height: 2;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+.page.active{
+    display:block;
 }
-
-details {
-    background: white;
-    border-radius: 14px;
-    margin: 15px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    overflow: hidden;
+.card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    margin:15px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,.07);
+    line-height:2;
 }
-
-summary {
-    cursor: pointer;
-    padding: 18px;
-    font-weight: bold;
-    font-size: 16px;
-    background: #fafafa;
-    line-height: 1.8;
+details{
+    background:#fff;
+    border-radius:12px;
+    margin:14px 0;
+    box-shadow:0 2px 7px rgba(0,0,0,.06);
+    overflow:hidden;
 }
-
-.content {
-    padding: 18px;
-    line-height: 2;
-    font-size: 14px;
+summary{
+    cursor:pointer;
+    padding:17px;
+    font-weight:bold;
+    background:#f8fafc;
 }
-
-.note {
-    background: #fff8e1;
-    border-right: 5px solid #fbc02d;
-    padding: 14px;
-    border-radius: 8px;
-    margin: 15px 0;
-    line-height: 2;
+.details-content{
+    padding:18px;
+    line-height:2;
 }
-
-.important {
-    background: #ffebee;
-    border-right: 5px solid #e53935;
-    padding: 14px;
-    border-radius: 8px;
-    margin: 15px 0;
-    line-height: 2;
+.note{
+    background:#fff3cd;
+    border-right:5px solid #f0ad00;
 }
-
-ol {
-    padding-right: 25px;
+.important{
+    background:#ffebee;
+    border-right:5px solid #d32f2f;
 }
-
-li {
-    margin-bottom: 10px;
+ol{
+    padding-right:25px;
 }
-
-.file-button {
-    display: block;
-    text-decoration: none;
-    background: #1976d2;
-    color: white;
-    padding: 12px 15px;
-    border-radius: 10px;
-    margin: 10px 0;
-    text-align: center;
+li{
+    margin:8px 0;
 }
-
-.footer {
-    text-align: center;
-    color: #888;
-    font-size: 12px;
-    padding: 25px 10px;
+.download{
+    display:inline-block;
+    background:#1565c0;
+    color:white;
+    text-decoration:none;
+    padding:9px 15px;
+    border-radius:8px;
+    margin:6px 0;
 }
-
-.section {
-    display: none;
-}
-
-.section.active {
-    display: block;
+footer{
+    text-align:center;
+    color:#777;
+    padding:25px;
+    font-size:13px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1 id="pageTitle">🏫 مدرسه غیردولتی</h1>
-</div>
+<header>
+    <h1 id="pageTitle">📋 مراحل دریافت مجوز</h1>
+</header>
 
 <div class="container">
 
-<a href="school.html" class="back" onclick="clearDetails()">
-    ⬅ بازگشت به مراحل مدرسه
+<a class="back" id="backButton" href="index.html">⬅ بازگشت</a>
+
+
+<!-- ================================================= -->
+<!-- مدرسه - مرحله ۱ -->
+<!-- ================================================= -->
+
+<section id="school-establishment" class="page">
+
+<div class="card">
+<h2>🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه</h2>
+</div>
+
+<div class="card">
+<h3>گام ۱: ثبت درخواست در سامانه‌ها</h3>
+
+<p>
+مراجعه به سامانه درگاه ملی مجوزها، ثبت درخواست و پرینت کد درخواست اخذ شده از سامانه.
+</p>
+
+<p>
+اخذ گواهی عدم سوءپیشینه کیفری از دفاتر خدمات قضایی و بارگذاری مدارک لازم.
+</p>
+
+<p>
+پس از ثبت درخواست، مراجعه به
+<strong>mosharekatha.ir</strong>
+و ورود با نام کاربری و رمز عبور.
+</p>
+
+<p>
+کارتابل متعلق به متقاضی است و نام کاربر در قسمت بالای سمت راست صفحه نمایش داده می‌شود.
+</p>
+
+<p>
+از قسمت «مجوزها» و سپس «مجوزهای تأسیس» می‌توانید روند درخواست خود را به صورت آنلاین پیگیری نمایید.
+</p>
+</div>
+
+
+<div class="card">
+<h3>گام ۲: تشکیل پرونده گزینش و حراست</h3>
+
+<div class="note">
+پس از ثبت درخواست در درگاه ملی مجوزها، حداکثر ظرف مدت یک هفته پرونده گزینش و حراست را به ترتیب زیر کامل کرده و به آموزش و پرورش تحویل دهید.
+</div>
+
+<div class="important">
+پرونده گزینش ویژه نیروهای آزاد و بازنشسته آموزش و پرورش می‌باشد.
+همکاران فرهنگی شاغل، نیاز به تشکیل پرونده گزینش ندارند.
+</div>
+
+<details>
+<summary>📁 مدارک لازم برای پرونده گزینش</summary>
+
+<div class="details-content">
+
+<ol>
+<li>پوشه سفید</li>
+<li>درخواست کتبی</li>
+<li>تکمیل فرم اطلاعات فردی در دو نسخه</li>
+<li>تصویر تمام صفحات شناسنامه برابر با اصل</li>
+<li>تصویر کارت ملی برابر با اصل</li>
+<li>تصویر پایان خدمت برابر با اصل</li>
+<li>تصویر آخرین مدرک تحصیلی برابر با اصل</li>
+<li>یک قطعه عکس ۴×۳</li>
+<li>گیره ۱ عدد</li>
+</ol>
+
+<strong>نکات:</strong>
+
+<ol>
+<li>مدارک باید به ترتیب فوق در پوشه سفید قرار داده شود، در غیر این صورت از تحویل گرفتن پرونده معذوریم.</li>
+<li>مدارک باید در دفترخانه برابر با اصل گردند.</li>
+<li>دو عدد از عکس‌های مربوط به ردیف ۸ را در محل الصاق عکس فرم اطلاعات فردی بچسبانید.</li>
+<li>پس از اینکه پرونده گزینش و حراست را کامل نمودید، آن را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل دهید.</li>
+</ol>
+
+<a class="download" href="files/form-gozinesh.pdf" target="_blank">
+📄 دریافت فرم اطلاعات فردی گزینش
 </a>
 
+</div>
+</details>
 
-<!-- ================================================== -->
-<!-- مرحله ۱: دریافت مجوز تأسیس مدرسه -->
-<!-- ================================================== -->
 
-<div id="school-establishment" class="section">
+<details>
+<summary>📁 مدارک لازم برای پرونده حراست</summary>
 
-    <div class="title-box">
-        <strong>🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه</strong>
-        <br>
-        مراحل دریافت مجوز تأسیس مدرسه غیردولتی
-    </div>
+<div class="details-content">
 
+<ol>
+<li>پوشه سبز</li>
 
-    <!-- گام ۱ -->
+<li>
+پرینت کد درخواست از سامانه مشارکت‌ها و تحویل درخواست دستنویس
+(مشخصات کامل متقاضی، نوع مدرسه/مرکز، نوع جنسیت، مقطع مدرسه)
+</li>
 
-    <details>
-        <summary>
-            گام ۱: ثبت درخواست در درگاه ملی مجوزها
-        </summary>
+<li>
+تصویر صفحه اول شناسنامه و تصویر پشت و روی کارت ملی در یک A4
+</li>
 
-        <div class="content">
+<li>تکمیل فرم شرح مختصری از تاریخچه زندگی</li>
 
-            <p>
-                مراجعه به سامانه درگاه ملی مجوزها، ثبت درخواست و پرینت کد درخواست اخذ شده از سامانه.
-            </p>
+<li>تصویر تمام صفحات شناسنامه و کارت ملی</li>
 
-            <p>
-                اخذ گواهی عدم سوءپیشینه کیفری از دفاتر خدمات قضایی و بارگذاری مدارک لازم.
-            </p>
+<li>تصویر پایان خدمت</li>
 
-            <p>
-                پس از ثبت درخواست، مراجعه به
-                <strong>mosharekatha.ir</strong>
-                و ورود با نام کاربری و رمز عبور.
-            </p>
+<li>تصویر سوءپیشینه</li>
 
-            <p>
-                کارتابل مربوط به متقاضی بوده و نام کاربر در قسمت بالای سمت راست نمایش داده می‌شود.
-            </p>
+<li>فرم ۵۰۲ (نیروهای شاغل رسمی آموزش و پرورش)</li>
 
-            <p>
-                از قسمت <strong>«مجوزها»</strong> وارد
-                <strong>«مجوزهای تأسیس»</strong>
-                شوید تا بتوانید روند درخواست را به صورت آنلاین پیگیری نمایید.
-            </p>
+<li>تصویر حکم کارگزینی (نیروهای شاغل رسمی آموزش و پرورش)</li>
 
-        </div>
-    </details>
+<li>تصویر آخرین مدرک تحصیلی</li>
 
+<li>
+تصویر فیش واریز شده در هنگام ثبت‌نام در درگاه ملی مجوزها
+(مربوط به گام اول)
+</li>
 
-    <!-- گام ۲ -->
+<li>یک قطعه عکس ۴×۳</li>
 
-    <details>
-        <summary>
-            گام ۲: تشکیل پرونده گزینش و حراست
-        </summary>
+<li>گیره ۱ عدد</li>
+</ol>
 
-        <div class="content">
+<div class="important">
+واریز مبلغ مورد نظر حتماً باید از طریق بانک انجام گیرد.
+</div>
 
-            <div class="note">
-                پس از ثبت درخواست در درگاه ملی مجوزها، حداکثر ظرف مدت یک هفته پرونده گزینش و حراست را به ترتیب زیر کامل کرده و به آموزش و پرورش تحویل دهید.
-            </div>
+<strong>نکات:</strong>
 
-            <div class="important">
-                پرونده گزینش ویژه نیروهای آزاد و بازنشسته آموزش و پرورش می‌باشد.
-                همکاران فرهنگی شاغل، نیاز به تشکیل پرونده گزینش ندارند.
-            </div>
+<ol>
+<li>مدارک به ترتیب فوق در پوشه سبز قرار گیرد.</li>
+<li>فرم لازم برای ردیف ۴ بعد از پیام قرار داده شده است.</li>
+<li>پس از تکمیل پرونده حراست و گزینش، پوشه‌های سبز و سفید را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل دهید.</li>
+<li>بعد از مراجعه و صدور معرفی‌نامه حراست از سوی شعبه مشارکت‌ها، متقاضی باید پوشه سبز را شخصاً تحویل واحد حراست دهد.</li>
+</ol>
 
+<a class="download" href="files/form-herasat.pdf" target="_blank">
+📄 دریافت فرم شرح مختصری از تاریخچه زندگی
+</a>
 
-            <details>
-
-                <summary>
-                    📁 مدارک لازم برای پرونده گزینش
-                </summary>
-
-                <div class="content">
-
-                    <ol>
-                        <li>پوشه سفید</li>
-                        <li>درخواست کتبی</li>
-                        <li>تکمیل فرم اطلاعات فردی در دو نسخه</li>
-                        <li>تصویر تمام صفحات شناسنامه برابر با اصل</li>
-                        <li>تصویر کارت ملی برابر با اصل</li>
-                        <li>تصویر پایان خدمت برابر با اصل</li>
-                        <li>تصویر آخرین مدرک تحصیلی برابر با اصل</li>
-                        <li>یک قطعه عکس ۴×۳</li>
-                        <li>گیره ۱ عدد</li>
-                    </ol>
-
-                    <div class="note">
-
-                        <strong>نکات مهم:</strong>
-
-                        <ol>
-
-                            <li>
-                                مدارک باید به ترتیب فوق در پوشه سفید قرار داده شود، در غیر این صورت از تحویل گرفتن پرونده معذوریم.
-                            </li>
-
-                            <li>
-                                مدارک باید در دفترخانه برابر با اصل گردند.
-                            </li>
-
-                            <li>
-                                دو عدد از عکس‌های مربوط به ردیف ۸ را در محل الصاق عکس فرم اطلاعات فردی بچسبانید.
-                            </li>
-
-                            <li>
-                                پس از اینکه پرونده گزینش و حراست را کامل نمودید، آن را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل دهید.
-                            </li>
-
-                        </ol>
-
-                    </div>
-
-                    <a href="files/form-gozinesh.pdf"
-                       target="_blank"
-                       class="file-button">
-
-                        📄 دریافت فرم اطلاعات فردی گزینش
-
-                    </a>
-
-                </div>
-
-            </details>
-
-
-            <details>
-
-                <summary>
-                    📁 مدارک لازم برای پرونده حراست
-                </summary>
-
-                <div class="content">
-
-                    <ol>
-
-                        <li>
-                            پوشه سبز
-                        </li>
-
-                        <li>
-                            پرینت کد درخواست از سامانه مشارکت‌ها و تحویل درخواست دستنویس
-                            (مشخصات کامل متقاضی، نوع مدرسه/مرکز، نوع جنسیت، مقطع مدرسه)
-                        </li>
-
-                        <li>
-                            تصویر صفحه اول شناسنامه و تصویر پشت و روی کارت ملی در یک A4
-                        </li>
-
-                        <li>
-                            تکمیل فرم شرح مختصری از تاریخچه زندگی
-                        </li>
-
-                        <li>
-                            تصویر تمام صفحات شناسنامه و کارت ملی
-                        </li>
-
-                        <li>
-                            تصویر پایان خدمت
-                        </li>
-
-                        <li>
-                            تصویر سوءپیشینه
-                        </li>
-
-                        <li>
-                            فرم ۵۰۲ (نیروهای شاغل رسمی آموزش و پرورش)
-                        </li>
-
-                        <li>
-                            تصویر حکم کارگزینی (نیروهای شاغل رسمی آموزش و پرورش)
-                        </li>
-
-                        <li>
-                            تصویر آخرین مدرک تحصیلی
-                        </li>
-
-                        <li>
-                            تصویر فیش واریز شده در هنگام ثبت‌نام در درگاه ملی مجوزها
-                            (مربوط به گام اول)
-                        </li>
-
-                        <li>
-                            یک قطعه عکس ۴×۳
-                        </li>
-
-                        <li>
-                            گیره ۱ عدد
-                        </li>
-
-                    </ol>
-
-
-                    <div class="important">
-
-                        واریز مبلغ مورد نظر حتماً باید از طریق بانک انجام گیرد.
-
-                    </div>
-
-
-                    <div class="note">
-
-                        <strong>نکات مهم:</strong>
-
-                        <ol>
-
-                            <li>
-                                مدارک به ترتیب فوق در پوشه سبز قرار گیرد.
-                            </li>
-
-                            <li>
-                                فرم لازم برای ردیف ۴ بعد از پیام قرار داده شده است.
-                            </li>
-
-                            <li>
-                                پس از تکمیل پرونده حراست و گزینش، پوشه‌های سبز و سفید را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل دهید.
-                            </li>
-
-                            <li>
-                                بعد از مراجعه و صدور معرفی‌نامه حراست از سوی شعبه مشارکت‌ها، متقاضی باید پوشه سبز را شخصاً تحویل واحد حراست دهد.
-                            </li>
-
-                        </ol>
-
-                    </div>
-
-
-                    <a href="files/form-herasat.pdf"
-                       target="_blank"
-                       class="file-button">
-
-                        📄 دریافت فرم شرح مختصری از تاریخچه زندگی
-
-                    </a>
-
-                </div>
-
-            </details>
-
-        </div>
-    </details>
-
-
-    <!-- گام ۳ ادغام شده -->
-
-    <details>
-
-        <summary>
-            گام ۳: تشکیل پرونده شورای نظارت و ارسال به استان
-        </summary>
-
-        <div class="content">
-
-            <p>
-                پس از انجام مراحل مربوط به گزینش و حراست، پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
-            </p>
-
-            <div class="note">
-
-                پرونده فیزیکی در بازه زمانی
-                <strong>۲۰ تا ۲۵ هر ماه</strong>
-                به شعبه مشارکت‌های مردمی منطقه تحویل داده شود.
-
-            </div>
-
-            <p>
-                اصل مدارک به صورت اسکن رنگی تهیه شود و پاسخ استعلام‌های حراست و گزینش نیز به ترتیب در ادامه آن قرار گیرد.
-            </p>
-
-            <div class="important">
-
-                تمامی اسناد باید به صورت یک فایل PDF واحد، رنگی و به ترتیب ارسال شوند.
-
-            </div>
-
-            <p>
-                فایل PDF تهیه شده از طریق پیام‌رسان ایتا برای شناسه کارشناس مربوطه ارسال شود.
-            </p>
-
-            <div class="note">
-
-                جزئیات تکمیلی مربوط به فرآیند شورای نظارت و ارسال پرونده به استان پس از تکمیل اطلاعات در راهنما درج خواهد شد.
-
-            </div>
-
-        </div>
-
-    </details>
+</div>
+</details>
 
 </div>
 
 
-<!-- ================================================== -->
-<!-- مرحله ۲: دریافت مجوز راه‌اندازی مدرسه -->
-<!-- ================================================== -->
+<div class="card">
+<h3>گام ۳: تشکیل پرونده شورای نظارت و ارسال به استان</h3>
 
-<div id="school-launch" class="section">
+<p>
+پس از انجام مراحل مربوط به گزینش و حراست، پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
+</p>
 
-    <div class="title-box">
+<p>
+پرونده فیزیکی در بازه زمانی
+<strong>۲۰ تا ۲۵ هر ماه</strong>
+به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل داده شود.
+</p>
 
-        <strong>
-            🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه
-        </strong>
+<p>
+اصل مدارک به صورت رنگی اسکن شده و پاسخ استعلام‌های حراست و گزینش نیز به ترتیب در همان فایل قرار گیرد.
+</p>
 
-        <br>
+<div class="important">
+فایل اسکن شده باید فقط در قالب یک فایل PDF،
+به صورت یکپارچه و به ترتیب مدارک تهیه شود.
+</div>
 
-        مراحل مربوط به دریافت مجوز راه‌اندازی مدرسه غیردولتی
-
-    </div>
-
-
-    <!-- گام ۱ -->
-
-    <details>
-
-        <summary>
-            گام ۱: معرفی مکان مدرسه
-        </summary>
-
-        <div class="content">
-
-            <p>
-                پس از دریافت مجوز تأسیس، مکان مورد نظر برای راه‌اندازی مدرسه را به آموزش و پرورش معرفی نمایید.
-            </p>
-
-            <p>
-                پس از معرفی مکان، موضوع جهت بررسی و بازدید به مهندس مشاور معرفی خواهد شد.
-            </p>
-
-            <div class="note">
-
-                <strong>
-                    مدارک مورد نیاز برای معرفی مکان:
-                </strong>
-
-            </div>
-
-            <ol>
-
-                <li>
-                    درخواست کتبی
-                </li>
-
-                <li>
-                    پایان کار / پروانه ساخت
-                </li>
-
-                <li>
-                    عکس نمای ساختمان
-                </li>
-
-            </ol>
-
-        </div>
-
-    </details>
-
-
-    <!-- گام ۲ -->
-
-    <details>
-
-        <summary>
-            گام ۲: بررسی و بازدید مکان
-        </summary>
-
-        <div class="content">
-
-            <p>
-                پس از معرفی مکان، آموزش و پرورش جهت بررسی و بازدید، معرفی‌نامه لازم را برای مهندس مشاور صادر می‌نماید.
-            </p>
-
-            <p>
-                مکان معرفی شده توسط مهندس مشاور بررسی خواهد شد.
-            </p>
-
-        </div>
-
-    </details>
-
-
-    <!-- گام ۳ -->
-
-    <details>
-
-        <summary>
-            گام ۳: ادامه فرآیند صدور مجوز راه‌اندازی
-        </summary>
-
-        <div class="content">
-
-            <p>
-                ادامه جزئیات این مرحله پس از تکمیل اطلاعات در راهنما قرار خواهد گرفت.
-            </p>
-
-        </div>
-
-    </details>
+<p>
+فایل PDF تهیه شده از طریق ایتا برای شناسه کارشناس مربوطه ارسال گردد.
+</p>
 
 </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- مدرسه - مرحله ۲ -->
+<!-- ================================================= -->
+
+<section id="school-launch" class="page">
+
+<div class="card">
+<h2>🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه</h2>
+</div>
+
+<div class="card">
+
+<h3>گام ۱: معرفی مکان مدرسه</h3>
+
+<p>
+پس از دریافت مجوز تأسیس، متقاضی باید مکان مورد نظر برای راه‌اندازی مدرسه را به آموزش و پرورش معرفی نماید.
+</p>
+
+<p>
+پس از معرفی مکان، اقدامات لازم برای بازدید و بررسی فنی ساختمان انجام می‌شود.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>گام ۲: مدارک لازم برای معرفی مکان</h3>
+
+<ol>
+<li>درخواست کتبی</li>
+<li>پایان کار / پروانه ساخت</li>
+<li>عکس نمای ساختمان</li>
+</ol>
+
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- آموزشگاه - مرحله ۱ -->
+<!-- ================================================= -->
+
+<section id="institute-establishment" class="page">
+
+<div class="card">
+<h2>🟦 مرحله ۱: دریافت مجوز تأسیس آموزشگاه</h2>
+</div>
+
+<div class="card">
+
+<h3>گام ۱: ثبت درخواست در سامانه‌ها</h3>
+
+<p>
+مراجعه به سامانه درگاه ملی مجوزها، ثبت درخواست و پرینت کد درخواست اخذ شده از سامانه.
+</p>
+
+<p>
+اخذ گواهی عدم سوءپیشینه کیفری از دفاتر خدمات قضایی و بارگذاری مدارک لازم.
+</p>
+
+<p>
+پس از ثبت درخواست، مراجعه به
+<strong>mosharekatha.ir</strong>
+و ورود با نام کاربری و رمز عبور.
+</p>
+
+<p>
+کارتابل متعلق به متقاضی است و نام کاربر در قسمت بالای سمت راست صفحه نمایش داده می‌شود.
+</p>
+
+<p>
+از قسمت «مجوزها» و سپس «مجوزهای تأسیس» می‌توانید روند درخواست خود را به صورت آنلاین پیگیری نمایید.
+</p>
 
 </div>
 
 
-<div class="footer">
-    نسخه اولیه راهنمای مؤسسین
+<div class="card">
+
+<h3>گام ۲: تشکیل پرونده گزینش و حراست</h3>
+
+<div class="note">
+پس از ثبت درخواست در درگاه ملی مجوزها، حداکثر ظرف مدت یک هفته پرونده گزینش و حراست را به ترتیب زیر کامل کرده و به آموزش و پرورش تحویل دهید.
 </div>
+
+<div class="important">
+پرونده گزینش ویژه نیروهای آزاد و بازنشسته آموزش و پرورش می‌باشد.
+همکاران فرهنگی شاغل، نیاز به تشکیل پرونده گزینش ندارند.
+</div>
+
+<details>
+<summary>📁 مدارک لازم برای پرونده گزینش</summary>
+
+<div class="details-content">
+
+<ol>
+<li>پوشه سفید</li>
+<li>درخواست کتبی</li>
+<li>تکمیل فرم اطلاعات فردی در دو نسخه</li>
+<li>تصویر تمام صفحات شناسنامه برابر با اصل</li>
+<li>تصویر کارت ملی برابر با اصل</li>
+<li>تصویر پایان خدمت برابر با اصل</li>
+<li>تصویر آخرین مدرک تحصیلی برابر با اصل</li>
+<li>یک قطعه عکس ۴×۳</li>
+<li>گیره ۱ عدد</li>
+</ol>
+
+<strong>نکات:</strong>
+
+<ol>
+<li>مدارک باید به ترتیب فوق در پوشه سفید قرار داده شود، در غیر این صورت از تحویل گرفتن پرونده معذوریم.</li>
+<li>مدارک باید در دفترخانه برابر با اصل گردند.</li>
+<li>دو عدد از عکس‌های مربوط به ردیف ۸ را در محل الصاق عکس فرم اطلاعات فردی بچسبانید.</li>
+<li>پس از اینکه پرونده گزینش و حراست را کامل نمودید، آن را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل دهید.</li>
+</ol>
+
+<a class="download" href="files/form-gozinesh.pdf" target="_blank">
+📄 دریافت فرم اطلاعات فردی گزینش
+</a>
+
+</div>
+</details>
+
+
+<details>
+<summary>📁 مدارک لازم برای پرونده حراست</summary>
+
+<div class="details-content">
+
+<ol>
+<li>پوشه سبز</li>
+<li>پرینت کد درخواست از سامانه مشارکت‌ها و تحویل درخواست دستنویس (مشخصات کامل متقاضی، نوع آموزشگاه، نوع جنسیت)</li>
+<li>تصویر صفحه اول شناسنامه و تصویر پشت و روی کارت ملی در یک A4</li>
+<li>تکمیل فرم شرح مختصری از تاریخچه زندگی</li>
+<li>تصویر تمام صفحات شناسنامه و کارت ملی</li>
+<li>تصویر پایان خدمت</li>
+<li>تصویر سوءپیشینه</li>
+<li>فرم ۵۰۲ (نیروهای شاغل رسمی آموزش و پرورش)</li>
+<li>تصویر حکم کارگزینی (نیروهای شاغل رسمی آموزش و پرورش)</li>
+<li>تصویر آخرین مدرک تحصیلی</li>
+<li>تصویر فیش واریز شده در هنگام ثبت‌نام در درگاه ملی مجوزها</li>
+<li>یک قطعه عکس ۴×۳</li>
+<li>گیره ۱ عدد</li>
+</ol>
+
+<div class="important">
+واریز مبلغ مورد نظر حتماً باید از طریق بانک انجام گیرد.
+</div>
+
+<strong>نکات:</strong>
+
+<ol>
+<li>مدارک به ترتیب فوق در پوشه سبز قرار گیرد.</li>
+<li>فرم لازم برای ردیف ۴ بعد از پیام قرار داده شده است.</li>
+<li>پس از تکمیل پرونده حراست و گزینش، پوشه‌های سبز و سفید را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل دهید.</li>
+<li>بعد از مراجعه و صدور معرفی‌نامه حراست از سوی شعبه مشارکت‌ها، متقاضی باید پوشه سبز را شخصاً تحویل واحد حراست دهد.</li>
+</ol>
+
+<a class="download" href="files/form-herasat.pdf" target="_blank">
+📄 دریافت فرم شرح مختصری از تاریخچه زندگی
+</a>
+
+</div>
+</details>
+
+</div>
+
+
+<div class="card">
+
+<h3>گام ۳: تشکیل پرونده شورای نظارت و ارسال به استان</h3>
+
+<p>
+پس از انجام مراحل مربوط به گزینش و حراست، پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
+</p>
+
+<p>
+پرونده فیزیکی در بازه زمانی
+<strong>۲۰ تا ۲۵ هر ماه</strong>
+به واحد مشارکت‌های مردمی آموزش و پرورش مهاباد تحویل داده شود.
+</p>
+
+<p>
+اصل مدارک به صورت رنگی اسکن شده و پاسخ استعلام‌های حراست و گزینش نیز به ترتیب در همان فایل قرار گیرد.
+</p>
+
+<div class="important">
+فایل اسکن شده باید فقط در قالب یک فایل PDF،
+به صورت یکپارچه و به ترتیب مدارک تهیه شود.
+</div>
+
+<p>
+فایل PDF تهیه شده از طریق ایتا برای شناسه کارشناس مربوطه ارسال گردد.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- آموزشگاه - مرحله ۲ -->
+<!-- ================================================= -->
+
+<section id="institute-launch" class="page">
+
+<div class="card">
+<h2>🟩 مرحله ۲: دریافت مجوز راه‌اندازی آموزشگاه</h2>
+</div>
+
+<div class="card">
+
+<h3>گام ۱: معرفی مکان آموزشگاه</h3>
+
+<p>
+پس از دریافت مجوز تأسیس، متقاضی باید مکان مورد نظر برای راه‌اندازی آموزشگاه را به آموزش و پرورش معرفی نماید.
+</p>
+
+<p>
+پس از معرفی مکان، اقدامات لازم برای بازدید و بررسی فنی ساختمان انجام می‌شود.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>گام ۲: مدارک لازم برای معرفی مکان</h3>
+
+<ol>
+<li>درخواست کتبی</li>
+<li>پایان کار / پروانه ساخت</li>
+<li>عکس نمای ساختمان</li>
+</ol>
+
+</div>
+
+</section>
+
+
+</div>
+
+<footer>
+نسخه اولیه راهنمای مؤسسین
+</footer>
 
 
 <script>
 
-function clearDetails() {
-
-    document.querySelectorAll("details").forEach(function(detail) {
-        detail.removeAttribute("open");
+function resetDetails(){
+    document.querySelectorAll("details").forEach(function(item){
+        item.removeAttribute("open");
     });
-
-    sessionStorage.clear();
 }
 
+function showCorrectPage(){
 
-/*
-   نمایش بخش صحیح بر اساس لینک
-*/
+    resetDetails();
 
-function showSection() {
+    const hash = window.location.hash;
 
-    var hash = window.location.hash;
-
-    var sections = document.querySelectorAll(".section");
-
-    sections.forEach(function(section) {
-        section.classList.remove("active");
+    document.querySelectorAll(".page").forEach(function(page){
+        page.classList.remove("active");
     });
 
+    const selected = document.getElementById(
+        hash ? hash.substring(1) : ""
+    );
 
-    if (hash === "#school-launch") {
-
-        document.getElementById("school-launch").classList.add("active");
-
-        document.getElementById("pageTitle").innerHTML =
-            "🟩 دریافت مجوز راه‌اندازی مدرسه";
-
-    } else {
-
-        document.getElementById("school-establishment").classList.add("active");
-
-        document.getElementById("pageTitle").innerHTML =
-            "🟦 دریافت مجوز تأسیس مدرسه";
-
+    if(selected){
+        selected.classList.add("active");
     }
 
+    if(hash.includes("school-establishment")){
+        document.getElementById("pageTitle").textContent =
+            "🏫 دریافت مجوز تأسیس مدرسه";
+        document.getElementById("backButton").href =
+            "school.html";
+    }
 
-    /*
-       همیشه هنگام ورود، همه گام‌ها بسته باشند
-    */
+    else if(hash.includes("school-launch")){
+        document.getElementById("pageTitle").textContent =
+            "🏫 دریافت مجوز راه‌اندازی مدرسه";
+        document.getElementById("backButton").href =
+            "school.html";
+    }
 
-    document.querySelectorAll("details").forEach(function(detail) {
-        detail.removeAttribute("open");
-    });
+    else if(hash.includes("institute-establishment")){
+        document.getElementById("pageTitle").textContent =
+            "📖 دریافت مجوز تأسیس آموزشگاه";
+        document.getElementById("backButton").href =
+            "institute.html";
+    }
 
+    else if(hash.includes("institute-launch")){
+        document.getElementById("pageTitle").textContent =
+            "📖 دریافت مجوز راه‌اندازی آموزشگاه";
+        document.getElementById("backButton").href =
+            "institute.html";
+    }
 }
 
-
-/* اجرای اولیه */
-
-document.addEventListener("DOMContentLoaded", function() {
-    showSection();
-});
-
-
-/* اگر hash تغییر کرد */
-
-window.addEventListener("hashchange", function() {
-    showSection();
-});
-
-
-/*
-   وقتی صفحه از cache مرورگر برمی‌گردد
-*/
-
-window.addEventListener("pageshow", function() {
-    document.querySelectorAll("details").forEach(function(detail) {
-        detail.removeAttribute("open");
-    });
-});
+window.addEventListener("DOMContentLoaded", showCorrectPage);
+window.addEventListener("pageshow", showCorrectPage);
+window.addEventListener("hashchange", showCorrectPage);
 
 </script>
 
