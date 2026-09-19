@@ -3,123 +3,293 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>راهنمای مؤسسین</title>
 
 <style>
+
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
     font-family:Tahoma,Arial,sans-serif;
-    background:#f4f7fb;
+    background:#f3f6fa;
     color:#222;
 }
+
+/* ---------- Header ---------- */
+
 header{
-    background:#1565c0;
+    background:linear-gradient(135deg,#1565c0,#1976d2);
     color:white;
-    padding:28px 15px;
     text-align:center;
+    padding:32px 15px 28px;
+    box-shadow:0 3px 12px rgba(0,0,0,.12);
 }
+
 header h1{
     margin:0 0 10px;
-    font-size:27px;
+    font-size:28px;
 }
+
 header p{
     margin:0;
     font-size:15px;
+    opacity:.95;
 }
+
+/* ---------- Main ---------- */
+
 .container{
-    max-width:800px;
-    margin:25px auto;
-    padding:0 15px;
+    max-width:820px;
+    margin:28px auto;
+    padding:0 16px;
 }
-.intro,.note{
+
+/* ---------- Intro ---------- */
+
+.intro{
     background:white;
-    border-radius:14px;
-    padding:18px;
+    border-radius:16px;
+    padding:21px 22px;
     margin-bottom:18px;
     line-height:2;
-    box-shadow:0 2px 8px rgba(0,0,0,.07);
+    box-shadow:0 3px 12px rgba(0,0,0,.07);
+    border-right:5px solid #1565c0;
 }
+
+/* ---------- Roadmap ---------- */
+
+.roadmap{
+    background:white;
+    border-radius:16px;
+    padding:21px 22px;
+    margin-bottom:18px;
+    box-shadow:0 3px 12px rgba(0,0,0,.07);
+}
+
+.roadmap-title{
+    font-size:18px;
+    font-weight:bold;
+    color:#1565c0;
+    margin-bottom:14px;
+}
+
+.roadmap-text{
+    line-height:2;
+    margin-bottom:12px;
+}
+
+.roadmap-item{
+    background:#f5f8fc;
+    border-radius:10px;
+    padding:11px 15px;
+    margin:8px 0;
+    font-size:15px;
+}
+
+.roadmap-item strong{
+    font-size:16px;
+    color:#1565c0;
+}
+
+/* ---------- Important Note ---------- */
+
+.note{
+    background:#fff8df;
+    border-right:5px solid #e5b93f;
+    border-radius:14px;
+    padding:18px 20px;
+    margin-bottom:24px;
+    line-height:2;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.note-title{
+    font-weight:bold;
+    color:#8a6800;
+    margin-bottom:5px;
+}
+
+/* ---------- Menu Cards ---------- */
+
+.menu-title{
+    font-size:20px;
+    font-weight:bold;
+    margin:25px 4px 14px;
+    color:#333;
+}
+
 .card{
     display:block;
     text-decoration:none;
     color:#222;
     background:white;
-    border-radius:16px;
-    padding:20px;
-    margin:15px 0;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-    transition:.2s;
+    border-radius:17px;
+    padding:21px 22px;
+    margin:14px 0;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    border:1px solid #edf0f4;
+    transition:transform .18s, box-shadow .18s;
 }
+
 .card:hover{
     transform:translateY(-2px);
+    box-shadow:0 6px 17px rgba(0,0,0,.12);
 }
+
 .card h2{
-    margin:0 0 8px;
+    margin:0 0 9px;
     color:#1565c0;
     font-size:19px;
 }
+
 .card p{
     margin:0;
+    color:#666;
     line-height:1.9;
+    font-size:14px;
 }
+
+/* ---------- Footer ---------- */
+
 footer{
     text-align:center;
     color:#777;
-    padding:25px;
+    padding:25px 15px 30px;
     font-size:13px;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
+
     <h1>📚 راهنمای مؤسسین</h1>
-    <p>مدارس و مراکز غیردولتی استان آذربایجان غربی</p>
+
+    <p>
+        مدارس و مراکز غیردولتی استان آذربایجان غربی
+    </p>
+
 </header>
+
 
 <div class="container">
 
+
+    <!-- معرفی -->
+
     <div class="intro">
-        این راهنما با هدف تسهیل و اطلاع‌رسانی مراحل تأسیس و راه‌اندازی
-        مدارس و مراکز آموزشی و پرورشی غیردولتی تهیه شده است.
+
+        این راهنما با هدف تسهیل و اطلاع‌رسانی مراحل تأسیس و
+        راه‌اندازی مدارس و مراکز آموزشی و پرورشی غیردولتی تهیه شده است.
+
     </div>
 
-    <div class="note">
-        <strong>🗺️ مسیر کلی:</strong><br>
-        برای تأسیس مدرسه یا مرکز آموزشی و پرورشی، دو مجوز اصلی مورد نیاز است:
-        <br>
-        ۱- مجوز تأسیس (موافقت اصولی)
-        <br>
-        ۲- مجوز راه‌اندازی
+
+    <!-- مسیر کلی -->
+
+    <div class="roadmap">
+
+        <div class="roadmap-title">
+            🗺️ مسیر کلی کار
+        </div>
+
+        <div class="roadmap-text">
+
+            برای تأسیس مدرسه یا مرکز آموزشی و پرورشی،
+            دو مجوز اصلی مورد نیاز است:
+
+        </div>
+
+        <div class="roadmap-item">
+
+            <strong>۱- مجوز تأسیس</strong>
+            (موافقت اصولی)
+
+        </div>
+
+        <div class="roadmap-item">
+
+            <strong>۲- مجوز راه‌اندازی</strong>
+
+        </div>
+
     </div>
 
+
+    <!-- نکته مهم -->
+
     <div class="note">
-        <strong>⚠️ نکته مهم:</strong><br>
+
+        <div class="note-title">
+            ⚠️ نکته مهم
+        </div>
+
         مدت زمان انجام مراحل اداری ممکن است متغیر باشد.
         همچنین دقت در تکمیل فرم‌ها و ارائه مدارک کامل،
         در جلوگیری از تأخیر در روند صدور مجوزها اهمیت دارد.
+
     </div>
 
+
+    <!-- منوی اصلی -->
+
+    <div class="menu-title">
+        📌 انتخاب بخش مورد نظر
+    </div>
+
+
     <a class="card" href="conditions.html">
-        <h2>📋 شرایطی که متقاضیان تأسیس مدرسه و آموزشگاه باید دارا باشند</h2>
-        <p>شرایط لازم برای متقاضیان قبل از شروع مراحل تأسیس</p>
+
+        <h2>
+            📋 شرایطی که متقاضیان تأسیس مدرسه و آموزشگاه باید دارا باشند
+        </h2>
+
+        <p>
+            شرایط لازم برای متقاضیان قبل از شروع مراحل تأسیس
+        </p>
+
     </a>
+
 
     <a class="card" href="school.html">
-        <h2>🏫 مراحل تأسیس و راه‌اندازی مدرسه غیردولتی</h2>
-        <p>مشاهده مراحل و گام‌های دریافت مجوز مدرسه غیردولتی</p>
+
+        <h2>
+            🏫 مراحل تأسیس و راه‌اندازی مدرسه غیردولتی
+        </h2>
+
+        <p>
+            مشاهده مراحل و گام‌های دریافت مجوز مدرسه غیردولتی
+        </p>
+
     </a>
 
+
     <a class="card" href="institute.html">
-        <h2>📖 مراحل تأسیس و راه‌اندازی آموزشگاه</h2>
-        <p>مشاهده مراحل و گام‌های دریافت مجوز آموزشگاه</p>
+
+        <h2>
+            📖 مراحل تأسیس و راه‌اندازی آموزشگاه
+        </h2>
+
+        <p>
+            مشاهده مراحل و گام‌های دریافت مجوز آموزشگاه
+        </p>
+
     </a>
+
 
 </div>
 
+
 <footer>
+
     نسخه اولیه راهنمای مؤسسین
+
 </footer>
 
 </body>
