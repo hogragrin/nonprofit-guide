@@ -3,168 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>مدرسه غیردولتی</title>
+<title>مراحل مدرسه غیردولتی</title>
 
 <style>
-* {
-    box-sizing: border-box;
+body{
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f4f7fb;
+    color:#222;
 }
-
-body {
-    margin: 0;
-    font-family: Tahoma, Arial, sans-serif;
-    background: #f4f7fb;
-    color: #222;
+header{
+    background:#1565c0;
+    color:white;
+    padding:25px 15px;
+    text-align:center;
 }
-
-.header {
-    background: #1976d2;
-    color: white;
-    text-align: center;
-    padding: 22px 15px;
+header h1{
+    margin:0;
+    font-size:25px;
 }
-
-.header h1 {
-    margin: 0;
-    font-size: 22px;
+.container{
+    max-width:800px;
+    margin:25px auto;
+    padding:0 15px;
 }
-
-.container {
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 0 15px;
+.back{
+    display:inline-block;
+    background:white;
+    color:#1565c0;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:10px;
+    margin-bottom:18px;
 }
-
-.back {
-    display: inline-block;
-    text-decoration: none;
-    background: #eeeeee;
-    color: #333;
-    padding: 10px 16px;
-    border-radius: 10px;
-    margin-bottom: 18px;
-    font-size: 14px;
+.stage{
+    display:block;
+    background:white;
+    padding:22px;
+    margin:15px 0;
+    border-radius:16px;
+    text-decoration:none;
+    color:#222;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
 }
-
-.intro {
-    background: white;
-    border-radius: 15px;
-    padding: 18px;
-    margin-bottom: 18px;
-    line-height: 2;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+.stage h2{
+    margin:0 0 8px;
+    font-size:19px;
 }
-
-.stage {
-    display: block;
-    text-decoration: none;
-    color: #222;
-    background: white;
-    border-radius: 16px;
-    padding: 20px;
-    margin: 15px 0;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    transition: 0.2s;
+.stage p{
+    margin:0;
+    line-height:1.8;
 }
-
-.stage:hover {
-    transform: translateY(-2px);
-}
-
-.stage-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 9px;
-}
-
-.stage-text {
-    color: #666;
-    font-size: 13px;
-    line-height: 1.9;
-}
-
-.blue {
-    border-right: 7px solid #2196f3;
-}
-
-.green {
-    border-right: 7px solid #4caf50;
-}
-
-.yellow {
-    border-right: 7px solid #fbc02d;
-}
-
-.footer {
-    text-align: center;
-    color: #888;
-    font-size: 12px;
-    padding: 25px 10px;
+.blue h2{color:#1565c0;}
+.green h2{color:#2e7d32;}
+.yellow h2{color:#d89b00;}
+footer{
+    text-align:center;
+    color:#777;
+    padding:25px;
+    font-size:13px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1>🏫 مدرسه غیردولتی</h1>
-</div>
+<header>
+    <h1>🏫 مراحل تأسیس و راه‌اندازی مدرسه غیردولتی</h1>
+</header>
 
 <div class="container">
 
-<a href="index.html" class="back">⬅ بازگشت به صفحه اصلی</a>
+<a class="back" href="index.html">⬅ بازگشت به صفحه اصلی</a>
 
-<div class="intro">
-    <strong>مراحل تأسیس و راه‌اندازی مدرسه غیردولتی</strong>
-    <br>
-    برای مشاهده جزئیات هر مرحله، روی مرحله مورد نظر کلیک کنید.
-</div>
-
-<!-- مرحله اول -->
-<a href="launch.html#school-establishment" class="stage blue">
-
-    <div class="stage-title">
-        🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه
-    </div>
-
-    <div class="stage-text">
-        مراحل و گام‌های مربوط به دریافت مجوز تأسیس مدرسه غیردولتی
-    </div>
-
+<a class="stage blue" href="launch.html#school-establishment">
+    <h2>🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه</h2>
+    <p>مشاهده گام‌های دریافت مجوز تأسیس مدرسه</p>
 </a>
 
-<!-- مرحله دوم -->
-<a href="launch.html#school-launch" class="stage green">
-
-    <div class="stage-title">
-        🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه
-    </div>
-
-    <div class="stage-text">
-        مراحل و گام‌های مربوط به دریافت مجوز راه‌اندازی مدرسه
-    </div>
-
+<a class="stage green" href="launch.html#school-launch">
+    <h2>🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه</h2>
+    <p>مشاهده گام‌های دریافت مجوز راه‌اندازی مدرسه</p>
 </a>
 
-<!-- مرحله سوم -->
-<a href="manager.html#school-manager" class="stage yellow">
-
-    <div class="stage-title">
-        🟨 مرحله ۳: معرفی مدیر مدرسه
-    </div>
-
-    <div class="stage-text">
-        مراحل و گام‌های مربوط به معرفی مدیر مدرسه
-    </div>
-
+<a class="stage yellow" href="manager.html#school-manager">
+    <h2>🟨 مرحله ۳: معرفی مدیر مدرسه</h2>
+    <p>مشاهده مراحل معرفی مدیر مدرسه</p>
 </a>
 
 </div>
 
-<div class="footer">
-    نسخه اولیه راهنمای مؤسسین
-</div>
+<footer>
+نسخه اولیه راهنمای مؤسسین
+</footer>
 
 </body>
 </html>
