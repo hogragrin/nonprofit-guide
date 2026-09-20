@@ -97,6 +97,21 @@ footer{
     padding:25px;
     font-size:13px;
 }
+
+/* فقط برای بسته و باز شدن گام‌ها */
+.step-card h3{
+    cursor:pointer;
+    margin:0;
+}
+
+.step-card .step-content{
+    display:none;
+    margin-top:15px;
+}
+
+.step-card.open .step-content{
+    display:block;
+}
 </style>
 </head>
 
@@ -122,7 +137,10 @@ footer{
 </div>
 
 <div class="card">
+
 <h3>گام ۱: ثبت درخواست در سامانه‌ها</h3>
+
+<div class="step-content">
 
 <p>
 ● مراجعه به سامانه درگاه ملی مجوزها، ثبت درخواست و پرینت کد درخواست اخذ شده از سامانه.
@@ -146,11 +164,16 @@ footer{
 <p>
 ● از قسمت «مجوزها» و سپس «مجوزهای تأسیس» می‌توانید روند درخواست خود را به صورت آنلاین پیگیری نمایید.
 </p>
+
+</div>
 </div>
 
 
 <div class="card">
+
 <h3>گام ۲: تشکیل پرونده گزینش و حراست</h3>
+
+<div class="step-content">
 
 <div class="note">
 پس از ثبت درخواست در درگاه ملی مجوزها، حداکثر ظرف مدت یک هفته پرونده گزینش و حراست را به ترتیب زیر کامل کرده و به آموزش و پرورش تحویل دهید.
@@ -257,10 +280,14 @@ footer{
 </details>
 
 </div>
+</div>
 
 
 <div class="card">
+
 <h3>گام ۳: تشکیل پرونده شورای نظارت و ارسال به استان</h3>
+
+<div class="step-content">
 
 <p>
 پس از انجام مراحل مربوط به گزینش و حراست، پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
@@ -286,6 +313,7 @@ footer{
 </p>
 
 </div>
+</div>
 
 </section>
 
@@ -304,6 +332,8 @@ footer{
 
 <h3>گام ۱: معرفی مکان مدرسه</h3>
 
+<div class="step-content">
+
 <p>
 پس از دریافت مجوز تأسیس، متقاضی باید مکان مورد نظر برای راه‌اندازی مدرسه را به آموزش و پرورش معرفی نماید.
 </p>
@@ -313,10 +343,13 @@ footer{
 </p>
 
 </div>
+</div>
 
 <div class="card">
 
 <h3>گام ۲: مدارک لازم برای معرفی مکان</h3>
+
+<div class="step-content">
 
 <ol>
 <li>درخواست کتبی</li>
@@ -324,6 +357,7 @@ footer{
 <li>عکس نمای ساختمان</li>
 </ol>
 
+</div>
 </div>
 
 </section>
@@ -342,6 +376,8 @@ footer{
 <div class="card">
 
 <h3>گام ۱: ثبت درخواست در سامانه‌ها</h3>
+
+<div class="step-content">
 
 <p>
 ● مراجعه به سامانه درگاه ملی مجوزها، ثبت درخواست و پرینت کد درخواست اخذ شده از سامانه.
@@ -367,11 +403,14 @@ footer{
 </p>
 
 </div>
+</div>
 
 
 <div class="card">
 
 <h3>گام ۲: تشکیل پرونده گزینش و حراست</h3>
+
+<div class="step-content">
 
 <div class="note">
 پس از ثبت درخواست در درگاه ملی مجوزها، حداکثر ظرف مدت یک هفته پرونده گزینش و حراست را به ترتیب زیر کامل کرده و به آموزش و پرورش تحویل دهید.
@@ -458,11 +497,14 @@ footer{
 </details>
 
 </div>
+</div>
 
 
 <div class="card">
 
 <h3>گام ۳: تشکیل پرونده شورای نظارت و ارسال به استان</h3>
+
+<div class="step-content">
 
 <p>
 پس از انجام مراحل مربوط به گزینش و حراست، پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
@@ -488,6 +530,7 @@ footer{
 </p>
 
 </div>
+</div>
 
 </section>
 
@@ -506,6 +549,8 @@ footer{
 
 <h3>گام ۱: معرفی مکان آموزشگاه</h3>
 
+<div class="step-content">
+
 <p>
 پس از دریافت مجوز تأسیس، متقاضی باید مکان مورد نظر برای راه‌اندازی آموزشگاه را به آموزش و پرورش معرفی نماید.
 </p>
@@ -515,10 +560,13 @@ footer{
 </p>
 
 </div>
+</div>
 
 <div class="card">
 
 <h3>گام ۲: مدارک لازم برای معرفی مکان</h3>
+
+<div class="step-content">
 
 <ol>
 <li>درخواست کتبی</li>
@@ -526,6 +574,7 @@ footer{
 <li>عکس نمای ساختمان</li>
 </ol>
 
+</div>
 </div>
 
 </section>
@@ -540,10 +589,36 @@ footer{
 
 <script>
 
+function prepareStepCards(){
+
+    document.querySelectorAll(".page .card").forEach(function(card){
+
+        const title = card.querySelector(":scope > h3");
+
+        if(title && title.textContent.trim().startsWith("گام")){
+            card.classList.add("step-card");
+
+            title.onclick = function(){
+
+                card.classList.toggle("open");
+
+            };
+        }
+
+    });
+
+}
+
 function resetDetails(){
+
     document.querySelectorAll("details").forEach(function(item){
         item.removeAttribute("open");
     });
+
+    document.querySelectorAll(".step-card").forEach(function(card){
+        card.classList.remove("open");
+    });
+
 }
 
 function showCorrectPage(){
@@ -563,6 +638,8 @@ function showCorrectPage(){
     if(selected){
         selected.classList.add("active");
     }
+
+    resetDetails();
 
     if(hash.includes("school-establishment")){
         document.getElementById("pageTitle").textContent =
@@ -591,11 +668,27 @@ function showCorrectPage(){
         document.getElementById("backButton").href =
             "institute.html";
     }
+
 }
 
-window.addEventListener("DOMContentLoaded", showCorrectPage);
-window.addEventListener("pageshow", showCorrectPage);
-window.addEventListener("hashchange", showCorrectPage);
+window.addEventListener("DOMContentLoaded", function(){
+
+    prepareStepCards();
+    showCorrectPage();
+
+});
+
+window.addEventListener("pageshow", function(){
+
+    resetDetails();
+
+});
+
+window.addEventListener("hashchange", function(){
+
+    showCorrectPage();
+
+});
 
 </script>
 
