@@ -51,6 +51,20 @@ header h1{
     box-shadow:0 2px 8px rgba(0,0,0,.07);
     line-height:2;
 }
+
+/* گام‌ها در ابتدا بسته باشند */
+.step-card h3{
+    cursor:pointer;
+    margin:0;
+}
+.step-card .step-content{
+    display:none;
+    margin-top:15px;
+}
+.step-card.open .step-content{
+    display:block;
+}
+
 details{
     background:#fff;
     border-radius:12px;
@@ -121,9 +135,11 @@ footer{
 <h2>🟦 مرحله ۱: دریافت مجوز تأسیس مدرسه</h2>
 </div>
 
-<div class="card">
+<div class="card step-card">
 
 <h3>گام ۱: ثبت درخواست در سامانه‌ها</h3>
+
+<div class="step-content">
 
 <p>
 ● مراجعه به سامانه درگاه ملی مجوزها، ثبت درخواست و پرینت کد درخواست اخذ شده از سامانه.
@@ -159,11 +175,14 @@ footer{
 </p>
 
 </div>
+</div>
 
 
-<div class="card">
+<div class="card step-card">
 
 <h3>گام ۲: تشکیل پرونده گزینش و حراست</h3>
+
+<div class="step-content">
 
 <div class="note">
 پس از ثبت درخواست در درگاه ملی مجوزها، حداکثر ظرف مدت یک هفته پرونده گزینش و حراست را به ترتیب زیر کامل کرده و به آموزش و پرورش تحویل دهید.
@@ -208,10 +227,6 @@ footer{
 <li>دو عدد از عکس‌های مربوط به ردیف ۸ را در محل الصاق عکس فرم اطلاعات فردی بچسبانید.</li>
 <li>پس از اینکه پرونده گزینش و حراست را کامل نمودید، آن را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش شهرستان تحویل دهید.</li>
 </ol>
-
-<a class="download" href="files/form-gozinesh.pdf" target="_blank">
-📄 دریافت فرم اطلاعات فردی گزینش
-</a>
 
 </div>
 </details>
@@ -287,11 +302,14 @@ footer{
 </details>
 
 </div>
+</div>
 
 
-<div class="card">
+<div class="card step-card">
 
 <h3>گام ۳: تشکیل پرونده شورای نظارت و ارسال به استان</h3>
+
+<div class="step-content">
 
 <p>
 پس از انجام مراحل مربوط به گزینش و حراست، پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
@@ -317,6 +335,7 @@ footer{
 </p>
 
 </div>
+</div>
 
 </section>
 
@@ -331,9 +350,11 @@ footer{
 <h2>🟩 مرحله ۲: دریافت مجوز راه‌اندازی مدرسه</h2>
 </div>
 
-<div class="card">
+<div class="card step-card">
 
 <h3>گام ۱: معرفی مکان مدرسه</h3>
+
+<div class="step-content">
 
 <p>
 پس از دریافت مجوز تأسیس، متقاضی باید مکان مورد نظر برای راه‌اندازی مدرسه را به آموزش و پرورش معرفی نماید.
@@ -344,11 +365,14 @@ footer{
 </p>
 
 </div>
+</div>
 
 
-<div class="card">
+<div class="card step-card">
 
 <h3>گام ۲: مدارک لازم برای معرفی مکان</h3>
+
+<div class="step-content">
 
 <ol>
 <li>درخواست کتبی</li>
@@ -356,6 +380,7 @@ footer{
 <li>عکس نمای ساختمان</li>
 </ol>
 
+</div>
 </div>
 
 </section>
@@ -371,9 +396,11 @@ footer{
 <h2>🟦 مرحله ۱: دریافت مجوز تأسیس آموزشگاه</h2>
 </div>
 
-<div class="card">
+<div class="card step-card">
 
 <h3>گام ۱: ثبت درخواست در سامانه‌ها</h3>
+
+<div class="step-content">
 
 <p>
 ● مراجعه به سامانه درگاه ملی مجوزها، ثبت درخواست و پرینت کد درخواست اخذ شده از سامانه.
@@ -409,11 +436,14 @@ footer{
 </p>
 
 </div>
+</div>
 
 
-<div class="card">
+<div class="card step-card">
 
 <h3>گام ۲: تشکیل پرونده گزینش و حراست</h3>
+
+<div class="step-content">
 
 <div class="note">
 پس از ثبت درخواست در درگاه ملی مجوزها، حداکثر ظرف مدت یک هفته پرونده گزینش و حراست را به ترتیب زیر کامل کرده و به آموزش و پرورش تحویل دهید.
@@ -459,10 +489,6 @@ footer{
 <li>دو عدد از عکس‌های مربوط به ردیف ۸ را در محل الصاق عکس فرم اطلاعات فردی بچسبانید.</li>
 <li>پس از اینکه پرونده گزینش و حراست را کامل نمودید، آن را سریعاً به واحد مشارکت‌های مردمی آموزش و پرورش شهرستان تحویل دهید.</li>
 </ol>
-
-<a class="download" href="files/form-gozinesh.pdf" target="_blank">
-📄 دریافت فرم اطلاعات فردی گزینش
-</a>
 
 </div>
 </details>
@@ -537,11 +563,14 @@ footer{
 </details>
 
 </div>
+</div>
 
 
-<div class="card">
+<div class="card step-card">
 
 <h3>گام ۳: تشکیل پرونده شورای نظارت و ارسال به استان</h3>
+
+<div class="step-content">
 
 <p>
 پس از انجام مراحل مربوط به گزینش و حراست، پرونده جهت ادامه فرآیند به شورای نظارت ارجاع می‌شود.
@@ -567,6 +596,7 @@ footer{
 </p>
 
 </div>
+</div>
 
 </section>
 
@@ -581,9 +611,11 @@ footer{
 <h2>🟩 مرحله ۲: دریافت مجوز راه‌اندازی آموزشگاه</h2>
 </div>
 
-<div class="card">
+<div class="card step-card">
 
 <h3>گام ۱: معرفی مکان آموزشگاه</h3>
+
+<div class="step-content">
 
 <p>
 پس از دریافت مجوز تأسیس، متقاضی باید مکان مورد نظر برای راه‌اندازی آموزشگاه را به آموزش و پرورش معرفی نماید.
@@ -594,11 +626,14 @@ footer{
 </p>
 
 </div>
+</div>
 
 
-<div class="card">
+<div class="card step-card">
 
 <h3>گام ۲: مدارک لازم برای معرفی مکان</h3>
+
+<div class="step-content">
 
 <ol>
 <li>درخواست کتبی</li>
@@ -606,6 +641,7 @@ footer{
 <li>عکس نمای ساختمان</li>
 </ol>
 
+</div>
 </div>
 
 </section>
@@ -621,10 +657,37 @@ footer{
 <script>
 
 function resetDetails(){
+
     document.querySelectorAll("details").forEach(function(item){
+        item.open = false;
         item.removeAttribute("open");
     });
+
+    document.querySelectorAll(".step-card").forEach(function(card){
+        card.classList.remove("open");
+    });
 }
+
+
+function prepareStepCards(){
+
+    document.querySelectorAll(".page .card").forEach(function(card){
+
+        const title = card.querySelector(":scope > h3");
+
+        if(title && title.textContent.trim().startsWith("گام")){
+
+            card.classList.add("step-card");
+
+            title.onclick = function(){
+
+                card.classList.toggle("open");
+
+            };
+        }
+    });
+}
+
 
 function showCorrectPage(){
 
@@ -679,11 +742,31 @@ function showCorrectPage(){
         document.getElementById("backButton").href =
             "institute.html";
     }
+
+    resetDetails();
 }
 
-window.addEventListener("DOMContentLoaded", showCorrectPage);
-window.addEventListener("pageshow", showCorrectPage);
-window.addEventListener("hashchange", showCorrectPage);
+
+window.addEventListener("DOMContentLoaded", function(){
+
+    prepareStepCards();
+    showCorrectPage();
+
+});
+
+
+window.addEventListener("pageshow", function(){
+
+    resetDetails();
+
+});
+
+
+window.addEventListener("hashchange", function(){
+
+    showCorrectPage();
+
+});
 
 </script>
 
