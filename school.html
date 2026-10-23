@@ -97,5 +97,26 @@ footer{
 نسخه اولیه راهنمای مؤسسین
 </footer>
 
+
+<script>
+<!-- D1 database connection: school -->
+(async function () {
+  try {
+    const response = await fetch("https://moasesin-api.nova-2e230c.workers.dev/api/guides?category=founders-guide");
+    if (!response.ok) return;
+    const data = await response.json();
+    if (!data.success || !Array.isArray(data.guides)) return;
+    const guide = data.guides.find(item => item.slug === "school");
+    if (!guide || !guide.body) return;
+    const savedPage = new DOMParser().parseFromString(guide.body, "text/html");
+    if (savedPage.body && savedPage.body.innerHTML.trim()) {
+      document.body.innerHTML = savedPage.body.innerHTML;
+    }
+  } catch (error) {
+    console.warn("Could not load this guide from the database; showing the saved page.", error);
+  }
+})();
+</script>
+
 </body>
 </html>
